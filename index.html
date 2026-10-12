@@ -216,7 +216,48 @@ td:first-child { font-weight: 600; }
 .foot { max-width: 1080px; margin-inline: auto; padding: 1.5rem var(--gutter) 2rem; border-top: 1px solid var(--line); font-size: 0.85rem; color: var(--muted); }
 @media (prefers-reduced-motion: no-preference) { .page:not([hidden]) { animation: rise 0.25s ease-out; } }
 @keyframes rise { from { opacity: 0.4; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+/* background art, kept below content */
+.art { position: fixed; inset: 0; z-index: 0; pointer-events: none; background-repeat: no-repeat; background-position: center bottom; background-size: cover; }
+.art--light { background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201600%201000%22%20preserveAspectRatio%3D%22xMidYMax%20slice%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22s%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23E4F0E8%22%2F%3E%3Cstop%20offset%3D%220.55%22%20stop-color%3D%22%23F3F6F1%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23F3F6F1%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22r%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23CFE5E6%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23BFDDE0%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%221600%22%20height%3D%221000%22%20fill%3D%22url(%23s)%22%2F%3E%3Ccircle%20cx%3D%221210%22%20cy%3D%22250%22%20r%3D%22120%22%20fill%3D%22%23F3D5DF%22%20opacity%3D%220.55%22%2F%3E%3Crect%20x%3D%221380%22%20y%3D%22548%22%20width%3D%2284%22%20height%3D%22100%22%20fill%3D%22%23C4D8CA%22%2F%3E%3Crect%20x%3D%221392%22%20y%3D%22562%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221410%22%20y%3D%22562%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221428%22%20y%3D%22562%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221446%22%20y%3D%22562%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221392%22%20y%3D%22582%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221410%22%20y%3D%22582%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221428%22%20y%3D%22582%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221446%22%20y%3D%22582%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221392%22%20y%3D%22602%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221410%22%20y%3D%22602%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221428%22%20y%3D%22602%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221446%22%20y%3D%22602%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221392%22%20y%3D%22622%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221410%22%20y%3D%22622%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221428%22%20y%3D%22622%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Crect%20x%3D%221446%22%20y%3D%22622%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23EDF4EF%22%20opacity%3D%221%22%2F%3E%3Cpath%20d%3D%22M0%20640C80%20600%20140%20610%20220%20628C300%20590%20380%20596%20450%20626C540%20596%20620%20600%20700%20630C790%20596%20880%20602%20960%20632C1050%20598%201140%20606%201230%20634C1320%20600%201410%20606%201500%20630L1600%20626V700H0Z%22%20fill%3D%22%23D2E4D6%22%20opacity%3D%220.85%22%2F%3E%3Cpath%20d%3D%22M0%20690C300%20650%20600%20710%20900%20676C1200%20642%201400%20690%201600%20664V1000H0Z%22%20fill%3D%22%23C3DACA%22%20opacity%3D%220.7%22%2F%3E%3Cpath%20d%3D%22M-40%20760C260%20700%20520%20820%20820%20760C1100%20706%201340%20800%201660%20730L1660%20790C1340%20860%201100%20770%20820%20826C520%20884%20260%20770%20-40%20830Z%22%20fill%3D%22url(%23r)%22%20opacity%3D%220.8%22%2F%3E%3Cpath%20d%3D%22M760%20770q40%2024%20100%200z%22%20fill%3D%22%238FB3A0%22%2F%3E%3Cpath%20d%3D%22M790%20746l16-20%2016%2020z%22%20fill%3D%22%238FB3A0%22%2F%3E%3Cpath%20d%3D%22M0%20850C260%20810%20560%20880%20880%20840C1180%20802%201420%20860%201600%20830V1000H0Z%22%20fill%3D%22%23B0CDB9%22%20opacity%3D%220.65%22%2F%3E%3Cg%20stroke%3D%22%236FA283%22%20stroke-width%3D%222%22%20opacity%3D%220.25%22%3E%3Cline%20x1%3D%22-600%22%20y1%3D%221000%22%20x2%3D%22100%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22-460%22%20y1%3D%221000%22%20x2%3D%22170%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22-320%22%20y1%3D%221000%22%20x2%3D%22240%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22-180%22%20y1%3D%221000%22%20x2%3D%22310%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22-40%22%20y1%3D%221000%22%20x2%3D%22380%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22100%22%20y1%3D%221000%22%20x2%3D%22450%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22240%22%20y1%3D%221000%22%20x2%3D%22520%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22380%22%20y1%3D%221000%22%20x2%3D%22590%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22520%22%20y1%3D%221000%22%20x2%3D%22660%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22660%22%20y1%3D%221000%22%20x2%3D%22730%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22800%22%20y1%3D%221000%22%20x2%3D%22800%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22940%22%20y1%3D%221000%22%20x2%3D%22870%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221080%22%20y1%3D%221000%22%20x2%3D%22940%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221220%22%20y1%3D%221000%22%20x2%3D%221010%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221360%22%20y1%3D%221000%22%20x2%3D%221080%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221500%22%20y1%3D%221000%22%20x2%3D%221150%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221640%22%20y1%3D%221000%22%20x2%3D%221220%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221780%22%20y1%3D%221000%22%20x2%3D%221290%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221920%22%20y1%3D%221000%22%20x2%3D%221360%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%222060%22%20y1%3D%221000%22%20x2%3D%221430%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%222200%22%20y1%3D%221000%22%20x2%3D%221500%22%20y2%3D%22868%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(170%20935)%20scale(1.6)%22%3E%3Cellipse%20cx%3D%220%22%20cy%3D%2212%22%20rx%3D%2252%22%20ry%3D%2210%22%20fill%3D%22%239CC2A7%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(-62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(-31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-28%22%20rx%3D%2210%22%20ry%3D%2228%22%20fill%3D%22%23F2C4D3%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(335%20968)%20scale(1.1)%22%3E%3Cellipse%20cx%3D%220%22%20cy%3D%2212%22%20rx%3D%2252%22%20ry%3D%2210%22%20fill%3D%22%239CC2A7%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(-62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(-31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-28%22%20rx%3D%2210%22%20ry%3D%2228%22%20fill%3D%22%23F2C4D3%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(1420%20945)%20scale(1.5)%22%3E%3Cellipse%20cx%3D%220%22%20cy%3D%2212%22%20rx%3D%2252%22%20ry%3D%2210%22%20fill%3D%22%239CC2A7%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(-62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(-31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-28%22%20rx%3D%2210%22%20ry%3D%2228%22%20fill%3D%22%23F2C4D3%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(1275%20975)%20scale(1)%22%3E%3Cellipse%20cx%3D%220%22%20cy%3D%2212%22%20rx%3D%2252%22%20ry%3D%2210%22%20fill%3D%22%239CC2A7%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(-62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(-31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%23E9A9BF%22%20transform%3D%22rotate(62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-28%22%20rx%3D%2210%22%20ry%3D%2228%22%20fill%3D%22%23F2C4D3%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
+.art--dark { background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201600%201000%22%20preserveAspectRatio%3D%22xMidYMax%20slice%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22s%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2312231B%22%2F%3E%3Cstop%20offset%3D%220.55%22%20stop-color%3D%22%230F1A15%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230F1A15%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22r%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%220%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23193A3E%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%231A4146%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%221600%22%20height%3D%221000%22%20fill%3D%22url(%23s)%22%2F%3E%3Ccircle%20cx%3D%221210%22%20cy%3D%22250%22%20r%3D%22120%22%20fill%3D%22%236A2F46%22%20opacity%3D%220.35%22%2F%3E%3Crect%20x%3D%221380%22%20y%3D%22548%22%20width%3D%2284%22%20height%3D%22100%22%20fill%3D%22%231B3328%22%2F%3E%3Crect%20x%3D%221392%22%20y%3D%22562%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221410%22%20y%3D%22562%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221428%22%20y%3D%22562%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221446%22%20y%3D%22562%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221392%22%20y%3D%22582%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221410%22%20y%3D%22582%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221428%22%20y%3D%22582%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221446%22%20y%3D%22582%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221392%22%20y%3D%22602%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221410%22%20y%3D%22602%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221428%22%20y%3D%22602%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221446%22%20y%3D%22602%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221392%22%20y%3D%22622%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221410%22%20y%3D%22622%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221428%22%20y%3D%22622%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Crect%20x%3D%221446%22%20y%3D%22622%22%20width%3D%228%22%20height%3D%2210%22%20fill%3D%22%23E2B659%22%20opacity%3D%220.5%22%2F%3E%3Cpath%20d%3D%22M0%20640C80%20600%20140%20610%20220%20628C300%20590%20380%20596%20450%20626C540%20596%20620%20600%20700%20630C790%20596%20880%20602%20960%20632C1050%20598%201140%20606%201230%20634C1320%20600%201410%20606%201500%20630L1600%20626V700H0Z%22%20fill%3D%22%2316291F%22%20opacity%3D%220.85%22%2F%3E%3Cpath%20d%3D%22M0%20690C300%20650%20600%20710%20900%20676C1200%20642%201400%20690%201600%20664V1000H0Z%22%20fill%3D%22%23183024%22%20opacity%3D%220.7%22%2F%3E%3Cpath%20d%3D%22M-40%20760C260%20700%20520%20820%20820%20760C1100%20706%201340%20800%201660%20730L1660%20790C1340%20860%201100%20770%20820%20826C520%20884%20260%20770%20-40%20830Z%22%20fill%3D%22url(%23r)%22%20opacity%3D%220.8%22%2F%3E%3Cpath%20d%3D%22M760%20770q40%2024%20100%200z%22%20fill%3D%22%232F6249%22%2F%3E%3Cpath%20d%3D%22M790%20746l16-20%2016%2020z%22%20fill%3D%22%232F6249%22%2F%3E%3Cpath%20d%3D%22M0%20850C260%20810%20560%20880%20880%20840C1180%20802%201420%20860%201600%20830V1000H0Z%22%20fill%3D%22%231A3628%22%20opacity%3D%220.65%22%2F%3E%3Cg%20stroke%3D%22%236FBF94%22%20stroke-width%3D%222%22%20opacity%3D%220.12%22%3E%3Cline%20x1%3D%22-600%22%20y1%3D%221000%22%20x2%3D%22100%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22-460%22%20y1%3D%221000%22%20x2%3D%22170%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22-320%22%20y1%3D%221000%22%20x2%3D%22240%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22-180%22%20y1%3D%221000%22%20x2%3D%22310%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22-40%22%20y1%3D%221000%22%20x2%3D%22380%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22100%22%20y1%3D%221000%22%20x2%3D%22450%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22240%22%20y1%3D%221000%22%20x2%3D%22520%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22380%22%20y1%3D%221000%22%20x2%3D%22590%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22520%22%20y1%3D%221000%22%20x2%3D%22660%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22660%22%20y1%3D%221000%22%20x2%3D%22730%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22800%22%20y1%3D%221000%22%20x2%3D%22800%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%22940%22%20y1%3D%221000%22%20x2%3D%22870%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221080%22%20y1%3D%221000%22%20x2%3D%22940%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221220%22%20y1%3D%221000%22%20x2%3D%221010%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221360%22%20y1%3D%221000%22%20x2%3D%221080%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221500%22%20y1%3D%221000%22%20x2%3D%221150%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221640%22%20y1%3D%221000%22%20x2%3D%221220%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221780%22%20y1%3D%221000%22%20x2%3D%221290%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%221920%22%20y1%3D%221000%22%20x2%3D%221360%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%222060%22%20y1%3D%221000%22%20x2%3D%221430%22%20y2%3D%22868%22%2F%3E%3Cline%20x1%3D%222200%22%20y1%3D%221000%22%20x2%3D%221500%22%20y2%3D%22868%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(170%20935)%20scale(1.6)%22%3E%3Cellipse%20cx%3D%220%22%20cy%3D%2212%22%20rx%3D%2252%22%20ry%3D%2210%22%20fill%3D%22%232F6249%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(-62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(-31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-28%22%20rx%3D%2210%22%20ry%3D%2228%22%20fill%3D%22%23A5506F%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(335%20968)%20scale(1.1)%22%3E%3Cellipse%20cx%3D%220%22%20cy%3D%2212%22%20rx%3D%2252%22%20ry%3D%2210%22%20fill%3D%22%232F6249%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(-62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(-31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-28%22%20rx%3D%2210%22%20ry%3D%2228%22%20fill%3D%22%23A5506F%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(1420%20945)%20scale(1.5)%22%3E%3Cellipse%20cx%3D%220%22%20cy%3D%2212%22%20rx%3D%2252%22%20ry%3D%2210%22%20fill%3D%22%232F6249%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(-62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(-31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-28%22%20rx%3D%2210%22%20ry%3D%2228%22%20fill%3D%22%23A5506F%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(1275%20975)%20scale(1)%22%3E%3Cellipse%20cx%3D%220%22%20cy%3D%2212%22%20rx%3D%2252%22%20ry%3D%2210%22%20fill%3D%22%232F6249%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(-62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(-31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(31)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-24%22%20rx%3D%2210%22%20ry%3D%2226%22%20fill%3D%22%238A3F5C%22%20transform%3D%22rotate(62)%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%22-28%22%20rx%3D%2210%22%20ry%3D%2228%22%20fill%3D%22%23A5506F%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .art--light { display: none; }
+  :root:not([data-theme="light"]) .art--dark { display: block; }
+}
+:root[data-theme="dark"] .art--light { display: none; }
+:root[data-theme="dark"] .art--dark { display: block; }
+main, .foot { position: relative; z-index: 1; }
+.site { background: var(--bg); }
+@supports (background: color-mix(in srgb, red, blue)) {
+  .site { background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(10px); }
+}
+
+/* added components */
+.lead + .note { margin-top: 0.75rem; }
+.callout { padding: 1rem 1.2rem; border-radius: var(--radius); background: var(--surface-2); max-width: 65ch; }
+.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 720px) { .two { grid-template-columns: minmax(0, 1fr); } }
+div.tile:hover { border-color: var(--line); }
+.plain a { font-weight: 600; overflow-wrap: anywhere; }
+.src { font-size: 0.85rem; color: var(--muted); }
+.src a { overflow-wrap: anywhere; }
+.domains span { color: var(--muted); font-size: 0.9rem; }
+.steps[data-n="6"] { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+@media (max-width: 1000px) { .steps[data-n="6"] { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 720px) { .steps[data-n="6"] { grid-template-columns: minmax(0, 1fr); } }
+.timeline { list-style: none; padding: 0; margin: 0 0 0 0.5rem; border-left: 2px solid var(--line); display: grid; }
+.timeline li { position: relative; padding: 0 0 1.6rem 1.5rem; display: grid; gap: 0.25rem; align-content: start; }
+.timeline li:last-child { padding-bottom: 0; }
+.timeline li::before { content: ""; position: absolute; left: -0.52rem; top: 0.3rem; width: 0.85rem; height: 0.85rem; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+.timeline li.is-future::before { background: var(--bg); border-color: var(--muted); }
+.timeline time { font: 500 0.75rem var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--lotus); }
+.timeline b { font: 600 1.05rem var(--font-display); }
+.timeline p { color: var(--muted); max-width: 62ch; }
 </style>
+
+<div class="art art--light" aria-hidden="true"></div>
+<div class="art art--dark" aria-hidden="true"></div>
 
 <header class="site">
   <div class="bar">
@@ -302,11 +343,26 @@ td:first-child { font-weight: 600; }
     </div>
 
     <div class="block">
+      <h2>Ngành mình đang học</h2>
+      <p>Theo trang giới thiệu của trường, ngành Quản trị khách sạn đào tạo kiến thức quản lý và vận hành khách sạn, resort, homestay, kết hợp thực hành và thực tập tại cơ sở lưu trú.</p>
+      <ul class="tags">
+        <li>Quản trị lễ tân và tiền sảnh</li>
+        <li>Quản lý buồng phòng</li>
+        <li>Quản trị nhân sự khách sạn</li>
+        <li>Tổ chức sự kiện</li>
+        <li>Công nghệ thông tin trong khách sạn</li>
+        <li>Xử lý khiếu nại</li>
+        <li>Quản lý và điều hành khách sạn</li>
+      </ul>
+      <p>Vị trí có thể làm sau khi tốt nghiệp: quản lý khách sạn, nhà hàng; nhân viên tiền sảnh, lễ tân; chuyên viên tổ chức sự kiện và hội nghị. <a href="https://tdu.edu.vn/gioi-thieu-nganh-hoc/13/gioi-thieu-nganh-quan-tri-khach-san" target="_blank" rel="noopener noreferrer">Xem trang ngành của trường</a>.</p>
+    </div>
+
+    <div class="block">
       <h2>Đi tiếp</h2>
       <div class="tiles">
         <a class="tile" href="#nls"><b>Năng lực số &amp; AI</b><span>Word, Excel, PowerPoint và cách mình dùng AI.</span></a>
-        <a class="tile" href="#nckh"><b>NCKH</b><span>Hoạt động nghiên cứu khoa học theo từng năm học.</span></a>
-        <a class="tile" href="#cc"><b>Chứng chỉ</b><span>Tin học và ngoại ngữ: tình trạng và kế hoạch.</span></a>
+        <a class="tile" href="#nckh"><b>NCKH</b><span>NCKH là gì, chính sách 2025–2027, giải thưởng và tài liệu.</span></a>
+        <a class="tile" href="#cc"><b>Chứng chỉ</b><span>Chứng chỉ là gì, tin học và ngoại ngữ gồm những gì.</span></a>
         <a class="tile" href="#kh"><b>Kế hoạch</b><span>Lộ trình bốn năm và việc cần làm trước mắt.</span></a>
       </div>
     </div>
@@ -320,14 +376,14 @@ td:first-child { font-weight: 600; }
 
     <div class="block">
       <h2>Khung năng lực số cho người học</h2>
-      <p>Khung này được ban hành theo Thông tư số 02/2025/TT-BGDĐT và gồm 6 miền năng lực.</p>
+      <p>Khung này do Bộ Giáo dục và Đào tạo ban hành theo <a href="https://thuvienphapluat.vn/van-ban/Giao-duc/Circular-02-2025-TT-BGDDT-Digital-Competence-Framework-646278.aspx" target="_blank" rel="noopener noreferrer">Thông tư 02/2025/TT-BGDĐT</a> ngày 24/01/2025, có hiệu lực từ 11/03/2025. Khung gồm 6 miền năng lực và 24 năng lực thành phần, áp dụng cho người học trong hệ thống giáo dục quốc dân. Dưới mỗi miền là một ví dụ trong ngành khách sạn.</p>
       <ol class="domains">
-        <li><small>MIỀN 1</small><b>Năng lực thông tin và dữ liệu</b></li>
-        <li><small>MIỀN 2</small><b>Giao tiếp và hợp tác trong môi trường số</b></li>
-        <li><small>MIỀN 3</small><b>Sáng tạo nội dung số</b></li>
-        <li><small>MIỀN 4</small><b>An toàn và an ninh trên không gian mạng</b></li>
-        <li><small>MIỀN 5</small><b>Giải quyết vấn đề</b></li>
-        <li><small>MIỀN 6</small><b>Ứng dụng trí tuệ nhân tạo (AI)</b></li>
+        <li><small>MIỀN 1</small><b>Khai thác dữ liệu và thông tin</b><span>Trong khách sạn: tìm hiểu giá phòng, đọc đánh giá của khách trên các trang đặt phòng.</span></li>
+        <li><small>MIỀN 2</small><b>Giao tiếp và hợp tác trong môi trường số</b><span>Trong khách sạn: phối hợp lễ tân, buồng phòng, nhà hàng qua nhóm tin nhắn và email.</span></li>
+        <li><small>MIỀN 3</small><b>Sáng tạo nội dung số</b><span>Trong khách sạn: làm brochure, bài đăng và hình ảnh giới thiệu dịch vụ.</span></li>
+        <li><small>MIỀN 4</small><b>An toàn</b><span>Trong khách sạn: bảo mật thông tin khách, mật khẩu và giao dịch thanh toán.</span></li>
+        <li><small>MIỀN 5</small><b>Giải quyết vấn đề</b><span>Trong khách sạn: xử lý sự cố đặt phòng và khiếu nại bằng công cụ số.</span></li>
+        <li><small>MIỀN 6</small><b>Ứng dụng trí tuệ nhân tạo</b><span>Trong khách sạn: soạn thư phản hồi, dịch, phân tích đánh giá của khách, có kiểm chứng.</span></li>
       </ol>
     </div>
 
@@ -349,7 +405,7 @@ td:first-child { font-weight: 600; }
         <a class="tile" href="#nls-powerpoint"><b>PowerPoint</b><span>Trình bày ý tưởng gọn và rõ.</span></a>
         <a class="tile" href="#nls-ai"><b>AI</b><span>Dùng AI có kiểm chứng và có trách nhiệm.</span></a>
       </div>
-      <p class="note">Nguồn: Thông tư số 02/2025/TT-BGDĐT của Bộ Giáo dục và Đào tạo.</p>
+      <p class="src">Nguồn: <a href="https://thuvienphapluat.vn/van-ban/Giao-duc/Circular-02-2025-TT-BGDDT-Digital-Competence-Framework-646278.aspx" target="_blank" rel="noopener noreferrer">Thông tư 02/2025/TT-BGDĐT</a>.</p>
     </div>
   </section>
 
@@ -365,6 +421,14 @@ td:first-child { font-weight: 600; }
         <li><strong>Bảng, hình ảnh, đánh số trang</strong><span>Kèm đầu trang và chân trang.</span></li>
         <li><strong>Trộn thư (Mail Merge)</strong><span>Gửi cùng một nội dung cho nhiều người.</span></li>
         <li><strong>Xuất PDF</strong><span>Chia sẻ văn bản bằng liên kết.</span></li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Mẹo mình hay dùng</h2>
+      <ul class="plain">
+        <li><strong>Bật Navigation Pane trong thẻ View</strong><span>Nhảy nhanh giữa các mục Heading khi văn bản dài.</span></li>
+        <li><strong>Ctrl + Enter để ngắt trang</strong><span>Không nhấn Enter nhiều lần để đẩy chữ xuống trang mới.</span></li>
+        <li><strong>Kiểm tra chính tả ở thẻ Review</strong><span>Soát lỗi tiếng Việt trước khi nộp bài.</span></li>
       </ul>
     </div>
     <div class="block">
@@ -432,6 +496,14 @@ td:first-child { font-weight: 600; }
       </div>
     </div>
     <div class="block">
+      <h2>Mẹo mình hay dùng</h2>
+      <ul class="plain">
+        <li><strong>Freeze Panes để cố định hàng tiêu đề</strong><span>Cuộn bảng dài vẫn nhìn thấy tên cột.</span></li>
+        <li><strong>Ctrl + T biến vùng dữ liệu thành bảng</strong><span>Công thức tự mở rộng khi thêm dòng mới.</span></li>
+        <li><strong>Nhập ngày theo một cách thống nhất</strong><span>Để lọc dữ liệu và vẽ biểu đồ không bị lỗi.</span></li>
+      </ul>
+    </div>
+    <div class="block">
       <h2>Sản phẩm mình sẽ làm</h2>
       <div class="tablewrap"><table>
         <thead><tr><th>Sản phẩm</th><th>Luyện kỹ năng</th><th>Trạng thái</th></tr></thead>
@@ -463,6 +535,14 @@ td:first-child { font-weight: 600; }
         <li><strong>Mỗi slide một ý chính</strong><span>Người xem nhớ được một ý rõ hơn nhiều ý lẫn nhau.</span></li>
         <li><strong>Chữ ngắn gọn</strong><span>Ưu tiên hình ảnh và số liệu.</span></li>
         <li><strong>Chữ đủ lớn</strong><span>Ngồi cuối lớp vẫn đọc được.</span></li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Mẹo mình hay dùng</h2>
+      <ul class="plain">
+        <li><strong>Đổi font và màu bằng Slide Master</strong><span>Sửa một lần cho cả bài thay vì sửa từng slide.</span></li>
+        <li><strong>Dùng Presenter View khi thuyết trình</strong><span>Vừa chiếu slide vừa xem ghi chú của mình.</span></li>
+        <li><strong>Ctrl + D để nhân đôi slide</strong><span>Giữ nguyên bố cục khi làm nhiều slide giống nhau.</span></li>
       </ul>
     </div>
     <div class="block">
@@ -531,35 +611,215 @@ td:first-child { font-weight: 600; }
   <section class="page" data-page="nckh" hidden>
     <p class="eyebrow">NCKH</p>
     <h1>Nghiên cứu khoa học</h1>
-    <p class="lead">Nghiên cứu khoa học giúp sinh viên học cách đặt câu hỏi, tìm tài liệu, thu thập số liệu và trình bày kết quả có căn cứ. Trang này ghi lại những gì mình làm theo từng năm học.</p>
+    <p class="lead">Nghiên cứu khoa học (NCKH) là cách tìm hiểu một vấn đề có hệ thống: đặt câu hỏi, tìm tài liệu, thu thập số liệu rồi rút ra kết luận có căn cứ. Với sinh viên, đây còn là cơ hội học làm việc nhóm và viết báo cáo nghiêm túc. Trang này tổng hợp tài liệu để mình và các bạn cùng khóa tìm hiểu.</p>
+
     <div class="block">
-      <h2>Các hướng mình đang cân nhắc</h2>
+      <h2>Sinh viên tham gia NCKH bằng cách nào</h2>
+      <p>Theo <a href="https://hethongphapluat.com/circular-no-26-2021-tt-bgddt-dated-september-17-2021-on-scientific-research-activties-of-students-in-higher-education-institutions.html" target="_blank" rel="noopener noreferrer">Thông tư 26/2021/TT-BGDĐT</a> (ban hành 17/9/2021, có hiệu lực từ 02/11/2021 và thay Thông tư 19/2012), sinh viên có bốn hình thức tham gia:</p>
+      <ul class="plain">
+        <li><strong>Thực hiện đề tài NCKH do trường tổ chức</strong><span>Sinh viên đề xuất đề tài theo kế hoạch của trường, mỗi đề tài có một sinh viên chịu trách nhiệm chính.</span></li>
+        <li><strong>Học các hoạt động bồi dưỡng năng lực nghiên cứu</strong><span>Gồm cả hoạt động chuyển giao công nghệ.</span></li>
+        <li><strong>Dự hội nghị, hội thảo, diễn đàn khoa học</strong><span>Và các cuộc thi ý tưởng, dự án khởi nghiệp trong nước hoặc quốc tế.</span></li>
+        <li><strong>Tham gia truyền thông khoa học</strong><span>Giới thiệu kết quả nghiên cứu với doanh nghiệp và nhà đầu tư.</span></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Quyền lợi của sinh viên khi làm NCKH</h2>
+      <ul class="plain">
+        <li><strong>Được đề xuất và đăng ký đề tài</strong><span>Theo kế hoạch của trường.</span></li>
+        <li><strong>Được dùng cơ sở vật chất của trường</strong><span>Phòng thí nghiệm, thư viện, thiết bị sẵn có.</span></li>
+        <li><strong>Được hỗ trợ kinh phí</strong><span>Theo định mức mà trường quy định.</span></li>
+        <li><strong>Được hỗ trợ công bố và đăng ký sở hữu trí tuệ</strong><span>Cho kết quả nghiên cứu.</span></li>
+        <li><strong>Được xem xét cộng điểm và ưu tiên học bổng</strong><span>Gồm điểm học tập, điểm rèn luyện và khen thưởng.</span></li>
+      </ul>
+      <p class="note">Mức hỗ trợ cụ thể do từng trường quy định. Quy trình của Trường Đại học Tây Đô nằm ở trang <a href="#nckh-tai-lieu">Tài liệu</a>.</p>
+    </div>
+
+    <div class="block">
+      <h2>Một đề tài đi qua những bước nào</h2>
+      <ol class="steps" data-n="6">
+        <li>Chọn chủ đề</li>
+        <li>Đọc tài liệu</li>
+        <li>Chọn phương pháp</li>
+        <li>Thu thập số liệu</li>
+        <li>Phân tích và viết báo cáo</li>
+        <li>Báo cáo trước hội đồng</li>
+      </ol>
+      <p class="note">Đây là quy trình chung của một nghiên cứu. Thời hạn và biểu mẫu cụ thể theo thông báo của trường.</p>
+    </div>
+
+    <div class="block">
+      <h2>Ý tưởng đề tài cho ngành khách sạn</h2>
       <ul class="tags">
         <li>Trải nghiệm và mức độ hài lòng của khách</li>
         <li>Du lịch bền vững</li>
         <li>Công nghệ và AI trong dịch vụ lưu trú</li>
         <li>Văn hóa ẩm thực địa phương</li>
       </ul>
+      <p>Đề tài về du lịch và dịch vụ hoàn toàn có thể đi xa. Ở Euréka lần thứ 27, một nghiên cứu về kinh tế ban đêm tại phường Bến Thành được chính quyền phường ứng dụng vào quản lý đô thị (xem trang <a href="#nckh-giai-thuong">Giải thưởng</a>).</p>
     </div>
+
     <div class="block">
-      <h2>Theo từng năm học</h2>
+      <h2>Xem tiếp</h2>
       <div class="tiles">
-        <a class="tile" href="#nckh-2026-2027"><b>2026–2027</b><span>Năm nhất: làm quen với nghiên cứu khoa học.</span></a>
-        <a class="tile" href="#nckh-2027-2028"><b>2027–2028</b><span>Tham gia một đề tài của khoa.</span></a>
-        <a class="tile" href="#nckh-2028-2029"><b>2028–2029</b><span>Thực hiện một nghiên cứu nhỏ.</span></a>
+        <a class="tile" href="#nckh-boi-canh"><b>Bối cảnh 2025–2027</b><span>Các chính sách và mốc thời gian quan trọng.</span></a>
+        <a class="tile" href="#nckh-giai-thuong"><b>Giải thưởng</b><span>Giải thưởng sinh viên và đề tài tiêu biểu.</span></a>
+        <a class="tile" href="#nckh-tai-lieu"><b>Tài liệu</b><span>Văn bản pháp luật và tài liệu của trường.</span></a>
       </div>
     </div>
   </section>
 
+  <section class="page" data-page="nckh-boi-canh" hidden>
+    <p class="eyebrow">NCKH</p>
+    <h1>Bối cảnh 2025–2027</h1>
+    <p class="lead">Từ cuối năm 2024, Việt Nam liên tiếp ban hành các chính sách đặt khoa học, công nghệ và đổi mới sáng tạo làm động lực phát triển. Dưới đây là những mốc liên quan đến sinh viên, xếp theo thời gian.</p>
+
+    <div class="block">
+      <ol class="timeline">
+        <li>
+          <time datetime="2024-12-22">22/12/2024</time>
+          <b>Nghị quyết 57-NQ/TW của Bộ Chính trị</b>
+          <p>Về đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia. Mục tiêu đến năm 2030 gồm chi cho nghiên cứu và phát triển đạt 2% GDP và kinh tế số chiếm tối thiểu 30% GDP. Nghị quyết cũng nhấn mạnh nâng cao chất lượng đào tạo nhân lực và năng lực số cho xã hội.</p>
+        </li>
+        <li>
+          <time datetime="2025-01-24">24/01/2025</time>
+          <b>Thông tư 02/2025/TT-BGDĐT về Khung năng lực số cho người học</b>
+          <p>Gồm 6 miền năng lực và 24 năng lực thành phần, có hiệu lực từ 11/03/2025. Một miền riêng dành cho ứng dụng trí tuệ nhân tạo.</p>
+        </li>
+        <li>
+          <time datetime="2025-10-01">01/10/2025</time>
+          <b>Luật Khoa học, công nghệ và đổi mới sáng tạo có hiệu lực</b>
+          <p>Luật số 93/2025/QH15 có hiệu lực từ 01/10/2025, riêng một số điều có hiệu lực sớm hơn, từ 01/07/2025.</p>
+        </li>
+        <li>
+          <time datetime="2025-11-05">Tháng 11–12/2025</time>
+          <b>Hai giải thưởng lớn dành cho sinh viên</b>
+          <p>Vòng chung khảo Giải thưởng Khoa học và Công nghệ dành cho sinh viên khai mạc ngày 05/11/2025 tại Đại học Nha Trang. Lễ tổng kết Euréka lần thứ 27 diễn ra ngày 07/12/2025 tại TP.HCM.</p>
+        </li>
+        <li>
+          <time datetime="2025-12-10">10/12/2025</time>
+          <b>Quốc hội thông qua Luật Giáo dục đại học mới</b>
+          <p>Luật số 125/2025/QH15, có hiệu lực từ 01/01/2026. Luật ghi nhận người học được tham gia nghiên cứu khoa học, đổi mới sáng tạo, khởi nghiệp và được hỗ trợ đăng ký bảo hộ sở hữu trí tuệ cho kết quả nghiên cứu.</p>
+        </li>
+        <li>
+          <time datetime="2026-08-18">18/08/2026</time>
+          <b>Khởi động Euréka lần thứ 28</b>
+          <p>Hội nghị triển khai tại TP.HCM. Giải thưởng mở cho sinh viên Việt Nam và sinh viên quốc tế đang học tại Việt Nam, gồm 15 lĩnh vực.</p>
+        </li>
+        <li class="is-future">
+          <time>2027</time>
+          <b>Chưa có thông báo chính thức</b>
+          <p>Mình chưa tìm thấy văn bản hay kế hoạch cụ thể cho năm 2027. Mình sẽ cập nhật khi các giải thưởng và kế hoạch của trường được công bố.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h2>Điều này có ý nghĩa gì với sinh viên khách sạn</h2>
+      <ul class="plain">
+        <li><strong>Quyền tham gia NCKH được ghi nhận rõ trong luật</strong><span>Từ Thông tư 26/2021 đến Luật Giáo dục đại học 2025, sinh viên có quyền nghiên cứu và được hỗ trợ.</span></li>
+        <li><strong>Năng lực số và AI trở thành yêu cầu chung</strong><span>Khung năng lực số áp dụng cho mọi người học, không riêng ngành công nghệ.</span></li>
+        <li><strong>Đề tài du lịch và dịch vụ có đất sống</strong><span>Nhiều đề tài sinh viên được địa phương và doanh nghiệp ứng dụng, kể cả đề tài về kinh tế đô thị.</span></li>
+      </ul>
+      <p class="note">Thông tin được tra cứu ngày 12/10/2026. Khi cần trích dẫn, hãy đối chiếu với văn bản gốc ở trang <a href="#nckh-tai-lieu">Tài liệu</a>.</p>
+    </div>
+  </section>
+
+  <section class="page" data-page="nckh-giai-thuong" hidden>
+    <p class="eyebrow">NCKH</p>
+    <h1>Giải thưởng và đề tài tiêu biểu</h1>
+    <p class="lead">Mình chưa có thành tích NCKH của riêng mình. Trang này giới thiệu những giải thưởng sinh viên có uy tín và các đề tài nổi bật của những bạn khác để mình học hỏi cách chọn đề tài và làm nghiên cứu.</p>
+
+    <div class="block">
+      <h2>Euréka lần thứ 27 (2025)</h2>
+      <p>Giải thưởng Sinh viên nghiên cứu khoa học Euréka do Thành Đoàn TP.HCM phối hợp Đại học Quốc gia TP.HCM tổ chức, tổng kết ngày 07/12/2025.</p>
+      <div class="kpis">
+        <div class="kpi"><small>Đề tài tham gia</small><b>2.179</b></div>
+        <div class="kpi"><small>Sinh viên</small><b>hơn 7.500</b></div>
+        <div class="kpi"><small>Trường tham gia</small><b>hơn 150</b></div>
+        <div class="kpi"><small>Đề tài đoạt giải</small><b>192</b></div>
+      </div>
+      <p>Cơ cấu giải gồm 15 giải nhất, 15 giải nhì, 21 giải ba và 141 giải khuyến khích.</p>
+    </div>
+
+    <div class="block">
+      <h2>Đề tài được ứng dụng ngoài đời</h2>
+      <ul class="plain">
+        <li><strong>Phát triển kinh tế ban đêm tại phường Bến Thành</strong><span>Được chính quyền phường ứng dụng vào quản lý đô thị. Gần với du lịch và dịch vụ nhất.</span></li>
+        <li><strong>Phát triển năng lực số cho học sinh trong dạy học Sinh học 10</strong><span>Được một trường thực hành sư phạm tiếp nhận để dùng trong giảng dạy.</span></li>
+        <li><strong>Cảm biến điện cơ cho bộ điều khiển tay robot</strong><span>Một công ty công nghệ phối hợp triển khai kết quả nghiên cứu.</span></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Giải thưởng Khoa học và Công nghệ dành cho sinh viên (cấp quốc gia)</h2>
+      <p>Năm 2025, giải có hơn 620 đề tài của hơn 110 trường đại học. Vòng sơ khảo khai mạc ngày 20/9/2025, vòng chung khảo khai mạc ngày 05/11/2025 tại Đại học Nha Trang. Ban tổ chức gồm Bộ Giáo dục và Đào tạo, Bộ Khoa học và Công nghệ, Trung ương Đoàn và Quỹ Hỗ trợ Sáng tạo Kỹ thuật Việt Nam (VIFOTEC). Đề tài thuộc nhiều lĩnh vực, từ khoa học tự nhiên, kỹ thuật, y dược, nông nghiệp đến khoa học xã hội và nhân văn.</p>
+    </div>
+
+    <div class="block">
+      <h2>Euréka lần thứ 28 (2026)</h2>
+      <p>Hội nghị triển khai diễn ra chiều 18/08/2026 tại Trung tâm Khởi nghiệp sáng tạo TP.HCM. Giải do Sở Khoa học và Công nghệ TP.HCM phối hợp Thành Đoàn và Đại học Quốc gia TP.HCM tổ chức, mở cho sinh viên Việt Nam và sinh viên quốc tế đang học tại Việt Nam, gồm 15 lĩnh vực. Mình chưa tìm thấy hạn nộp đề tài trong nguồn đã đọc, nên sẽ theo dõi thông báo của trường.</p>
+    </div>
+
+    <div class="block">
+      <h2>Mình học được gì từ các đề tài này</h2>
+      <ul class="plain">
+        <li><strong>Chọn đề tài nhỏ và cụ thể</strong><span>Gắn với một địa phương, một đối tượng hoặc một vấn đề có thật.</span></li>
+        <li><strong>Có nơi dùng được kết quả</strong><span>Đề tài càng có người cần thì càng có giá trị.</span></li>
+        <li><strong>Có số liệu và cách làm rõ ràng</strong><span>Kết luận phải dựa trên bằng chứng.</span></li>
+      </ul>
+      <p class="note">Nguồn tin về Euréka và giải thưởng cấp quốc gia nằm ở trang <a href="#nckh-tai-lieu">Tài liệu</a>.</p>
+    </div>
+  </section>
+
+  <section class="page" data-page="nckh-tai-lieu" hidden>
+    <p class="eyebrow">NCKH</p>
+    <h1>Tài liệu tham khảo</h1>
+    <p class="lead">Các liên kết dưới đây mở ra trang gốc. Văn bản pháp luật hay đổi, nên khi cần trích dẫn hãy kiểm tra lại bản mới nhất.</p>
+
+    <div class="block">
+      <h2>Văn bản pháp luật và chính sách</h2>
+      <ul class="plain">
+        <li><a href="https://hethongphapluat.com/circular-no-26-2021-tt-bgddt-dated-september-17-2021-on-scientific-research-activties-of-students-in-higher-education-institutions.html" target="_blank" rel="noopener noreferrer">Thông tư 26/2021/TT-BGDĐT</a><span>Hoạt động nghiên cứu khoa học của sinh viên trong cơ sở giáo dục đại học.</span></li>
+        <li><a href="https://thuvienphapluat.vn/van-ban/Giao-duc/Law-125-2025-QH15-on-Higher-Education-688914.aspx" target="_blank" rel="noopener noreferrer">Luật Giáo dục đại học 125/2025/QH15</a><span>Có hiệu lực từ 01/01/2026, quy định quyền nghiên cứu và khởi nghiệp của người học.</span></li>
+        <li><a href="https://luatvietnam.vn/linh-vuc-khac/luat-khoa-hoc-cong-nghe-va-doi-moi-sang-tao-co-hieu-luc-khi-nao-883-104186-article.html" target="_blank" rel="noopener noreferrer">Luật Khoa học, công nghệ và đổi mới sáng tạo 93/2025/QH15</a><span>Thời điểm có hiệu lực và các điều khoản chuyển tiếp.</span></li>
+        <li><a href="https://www.quanlynhanuoc.vn/2025/01/22/nghi-quyet-57-nq-tw-ve-dot-pha-phat-trien-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so-quoc-gia/" target="_blank" rel="noopener noreferrer">Nghị quyết 57-NQ/TW</a><span>Đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia.</span></li>
+        <li><a href="https://thuvienphapluat.vn/van-ban/Giao-duc/Circular-02-2025-TT-BGDDT-Digital-Competence-Framework-646278.aspx" target="_blank" rel="noopener noreferrer">Thông tư 02/2025/TT-BGDĐT</a><span>Khung năng lực số cho người học.</span></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Giải thưởng dành cho sinh viên</h2>
+      <ul class="plain">
+        <li><a href="https://www.sggp.org.vn/192-de-tai-nghien-cuu-khoa-hoc-xuat-sac-doat-giai-eureka-lan-thu-27-post827329.html" target="_blank" rel="noopener noreferrer">192 đề tài đoạt giải Euréka lần thứ 27</a><span>Báo Sài Gòn Giải Phóng, số liệu tổng quan.</span></li>
+        <li><a href="https://baovanhoa.vn/doi-song/192-de-tai-xuat-sac-duoc-vinh-danh-186509.html" target="_blank" rel="noopener noreferrer">Euréka 2025: 192 đề tài xuất sắc được vinh danh</a><span>Báo Văn Hóa, các đề tài được ứng dụng.</span></li>
+        <li><a href="https://baovanhoa.vn/doi-song/tphcm-khoi-dong-giai-thuong-eureka-lan-thu-28-257104.html" target="_blank" rel="noopener noreferrer">TP.HCM khởi động Euréka lần thứ 28</a><span>Thông tin về mùa giải 2026.</span></li>
+        <li><a href="https://nongnghiepmoitruong.vn/khai-mac-vong-chung-khao-giai-thuong-khoa-hoc-cong-nghe-sinh-vien-toan-quoc-d782439.html" target="_blank" rel="noopener noreferrer">Vòng chung khảo Giải thưởng Khoa học và Công nghệ sinh viên 2025</a><span>Khai mạc ngày 05/11/2025 tại Đại học Nha Trang.</span></li>
+        <li><a href="https://nongnghiepmoitruong.vn/629-de-tai-tham-gia-giai-thuong-khoa-hoc-va-cong-nghe-danh-cho-sinh-vien-d773997.html" target="_blank" rel="noopener noreferrer">Hơn 620 đề tài tham gia Giải thưởng Khoa học và Công nghệ sinh viên</a><span>Quy mô, đơn vị tổ chức và các lĩnh vực.</span></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Của Trường Đại học Tây Đô</h2>
+      <ul class="plain">
+        <li><a href="https://sid.tdu.edu.vn" target="_blank" rel="noopener noreferrer">Cổng thông tin nghiên cứu khoa học của trường</a><span>Quy định, hội thảo, danh mục đề tài cấp cơ sở và công bố khoa học.</span></li>
+        <li><a href="https://sid.tdu.edu.vn/bai-viet/10/quy-trinh-thuc-hien-de-tai-nckh-cap-truong-co-so" target="_blank" rel="noopener noreferrer">Quy trình thực hiện đề tài NCKH cấp trường</a><span>Các bước đăng ký và thực hiện đề tài.</span></li>
+        <li><a href="https://sid.tdu.edu.vn/bai-viet/13/quy-dinh-ve-liem-chinh-hoc-thuat-trong-dao-tao-va-nghien-cuu-khoa-hoc" target="_blank" rel="noopener noreferrer">Quy định về liêm chính học thuật</a><span>Trích dẫn đúng, không đạo văn, dùng AI có trách nhiệm trong học tập và nghiên cứu.</span></li>
+        <li><a href="https://tdujsc.tdu.edu.vn" target="_blank" rel="noopener noreferrer">Tạp chí Nghiên cứu khoa học và Phát triển kinh tế</a><span>Tạp chí của trường, nơi tham khảo bài nghiên cứu.</span></li>
+      </ul>
+    </div>
+  </section>
+
   <section class="page" data-page="nckh-2026-2027" hidden>
-    <p class="eyebrow">NCKH · Năm học</p>
+    <p class="eyebrow">NCKH · Kế hoạch của mình</p>
     <h1>2026–2027</h1>
     <p class="lead">Năm nhất là năm làm quen: hiểu quy định, đọc tài liệu và chọn chủ đề mình muốn theo đuổi.</p>
     <div class="block">
       <div class="tablewrap"><table>
         <thead><tr><th>Hoạt động</th><th>Vai trò</th><th>Trạng thái</th></tr></thead>
         <tbody>
-          <tr><td>Tìm hiểu quy định NCKH sinh viên của trường</td><td>Tự tìm hiểu</td><td><span class="chip chip--now">Đang làm</span></td></tr>
+          <tr><td>Đọc Thông tư 26/2021 và quy trình đề tài cấp trường của Tây Đô (xem trang <a href="#nckh-tai-lieu">Tài liệu</a>)</td><td>Tự tìm hiểu</td><td><span class="chip chip--now">Đang làm</span></td></tr>
           <tr><td>Tham gia hội thảo hoặc câu lạc bộ NCKH của khoa</td><td>Thành viên</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
           <tr><td>Đọc và tóm tắt 3 bài báo về du lịch - khách sạn</td><td>Tự học</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
           <tr><td>Chọn một chủ đề muốn nghiên cứu</td><td>Tự học</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
@@ -569,7 +829,7 @@ td:first-child { font-weight: 600; }
   </section>
 
   <section class="page" data-page="nckh-2027-2028" hidden>
-    <p class="eyebrow">NCKH · Năm học</p>
+    <p class="eyebrow">NCKH · Kế hoạch của mình</p>
     <h1>2027–2028</h1>
     <p class="lead">Năm hai, mình muốn bắt đầu làm nghiên cứu cùng nhóm và học cách viết báo cáo.</p>
     <div class="block">
@@ -584,7 +844,7 @@ td:first-child { font-weight: 600; }
   </section>
 
   <section class="page" data-page="nckh-2028-2029" hidden>
-    <p class="eyebrow">NCKH · Năm học</p>
+    <p class="eyebrow">NCKH · Kế hoạch của mình</p>
     <h1>2028–2029</h1>
     <p class="lead">Năm ba, mình muốn tự thực hiện một nghiên cứu nhỏ về chủ đề đã chọn và trình bày kết quả.</p>
     <div class="block">
@@ -601,20 +861,50 @@ td:first-child { font-weight: 600; }
   <!-- CHỨNG CHỈ -->
   <section class="page" data-page="cc" hidden>
     <p class="eyebrow">Chứng chỉ</p>
-    <h1>Chứng chỉ Tin học - Ngoại ngữ</h1>
-    <p class="lead">Chứng chỉ là minh chứng cho kỹ năng của mình. Hiện mình đang tìm hiểu chuẩn đầu ra của trường để chọn kỳ thi phù hợp.</p>
+    <h1>Chứng chỉ là gì?</h1>
+    <p class="lead">Chứng chỉ là giấy xác nhận do một đơn vị có thẩm quyền cấp, cho biết mình đã đạt một trình độ hoặc kỹ năng cụ thể sau khi học hoặc thi. Chứng chỉ không phải để khoe thành tích. Nó là bằng chứng để nhà trường và nhà tuyển dụng tin rằng mình làm được việc đó.</p>
+
     <div class="block">
-      <h2>Tình trạng hiện tại</h2>
-      <div class="tablewrap"><table>
-        <thead><tr><th>Nhóm</th><th>Chuẩn đầu ra</th><th>Tình trạng</th></tr></thead>
-        <tbody>
-          <tr><td><a href="#cc-tin-hoc">Tin học</a></td><td>Theo quy định của trường</td><td><span class="chip chip--look">Đang tìm hiểu</span></td></tr>
-          <tr><td><a href="#cc-ngoai-ngu">Ngoại ngữ</a></td><td>Theo quy định của trường</td><td><span class="chip chip--look">Đang tìm hiểu</span></td></tr>
-        </tbody>
-      </table></div>
+      <h2>Chứng chỉ khác văn bằng ở đâu</h2>
+      <div class="two">
+        <div class="tile"><b>Văn bằng</b><span>Xác nhận đã hoàn thành cả một chương trình đào tạo, ví dụ bằng cử nhân. Học nhiều năm và có một lần cấp.</span></div>
+        <div class="tile"><b>Chứng chỉ</b><span>Xác nhận một kỹ năng cụ thể. Thời gian học từ vài tuần đến vài tháng, và một số chứng chỉ có thời hạn sử dụng ghi ngay trên giấy.</span></div>
+      </div>
     </div>
+
     <div class="block">
-      <h2>Các bước mình sẽ đi</h2>
+      <h2>Các loại chứng chỉ trong ngành khách sạn</h2>
+      <div class="tiles">
+        <a class="tile" href="#cc-tin-hoc"><b>Tin học</b><span>Kỹ năng dùng máy tính và phần mềm văn phòng.</span></a>
+        <a class="tile" href="#cc-ngoai-ngu"><b>Ngoại ngữ</b><span>Khả năng giao tiếp với khách quốc tế.</span></a>
+        <div class="tile"><b>Nghiệp vụ chuyên ngành</b><span>Lễ tân, buồng phòng, nhà hàng, pha chế và các nghiệp vụ khác.</span></div>
+        <div class="tile"><b>Kỹ năng bổ trợ</b><span>Ví dụ sơ cứu, an toàn thực phẩm, giao tiếp và làm việc nhóm.</span></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Vì sao mình cần chứng chỉ</h2>
+      <ul class="plain">
+        <li><strong>Là điều kiện tốt nghiệp</strong><span>Mỗi trường có chuẩn đầu ra tin học và ngoại ngữ riêng, nên mình cần hỏi trường mình.</span></li>
+        <li><strong>Giúp xin thực tập và việc làm</strong><span>Nhà tuyển dụng nhìn vào chứng chỉ để biết mình dùng được kỹ năng gì.</span></li>
+        <li><strong>Giúp mình biết mình đang ở mức nào</strong><span>Thi lấy chứng chỉ là cách kiểm tra kỹ năng có đạt chuẩn hay chưa.</span></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Chứng chỉ có lấy trên mạng được không</h2>
+      <p>Mình có thể học và luyện thi trên mạng, nhưng chứng chỉ chỉ có giá trị khi do đơn vị được phép cấp và có thể tra cứu được. Mình kiểm tra bốn điều sau trước khi đăng ký thi:</p>
+      <ul class="plain">
+        <li><strong>Đơn vị cấp được công nhận</strong><span>Với tin học và ngoại ngữ, ưu tiên các đơn vị mà trường công nhận.</span></li>
+        <li><strong>Chứng chỉ có số hiệu, ngày cấp và chữ ký</strong><span>Và có cách để tra cứu lại.</span></li>
+        <li><strong>Có kỳ thi thật, có giám sát</strong><span>Không có chuyện “đóng tiền là đậu”.</span></li>
+        <li><strong>Tránh dịch vụ thi hộ hoặc mua chứng chỉ</strong><span>Đây là hành vi gian lận, chứng chỉ không được công nhận và có thể bị nhà trường xử lý.</span></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Mình đang ở đâu</h2>
+      <div class="callout">Mình chưa có chứng chỉ nào và đang ở bước tìm hiểu chuẩn đầu ra của trường.</div>
       <ol class="steps">
         <li class="is-now">Tìm hiểu chuẩn đầu ra</li>
         <li>Chọn kỳ thi</li>
@@ -622,50 +912,136 @@ td:first-child { font-weight: 600; }
         <li>Đăng ký và dự thi</li>
         <li>Cập nhật minh chứng</li>
       </ol>
-      <p class="note">Việc tiếp theo: hỏi phòng đào tạo hoặc cố vấn học tập về chuẩn đầu ra và lịch thi.</p>
     </div>
   </section>
 
   <section class="page" data-page="cc-tin-hoc" hidden>
     <p class="eyebrow">Chứng chỉ</p>
-    <h1>Tin học</h1>
-    <p class="lead">Kỹ năng tin học là nền cho các môn học sau này và cho công việc trong ngành khách sạn. Mình luyện song song với việc tìm hiểu chuẩn đầu ra.</p>
+    <h1>Chứng chỉ Tin học</h1>
+    <p class="lead">Ở Việt Nam, chuẩn kỹ năng sử dụng công nghệ thông tin được quy định tại Thông tư 03/2014/TT-BTTTT (ban hành 11/03/2014, có hiệu lực từ 28/04/2014). Chuẩn chia thành hai mức: cơ bản và nâng cao.</p>
+
     <div class="block">
-      <h2>Chứng chỉ mình đã có</h2>
-      <div class="empty">Mình chưa có chứng chỉ tin học. Khi có, thông tin sẽ được cập nhật tại đây.</div>
+      <h2>Mức cơ bản gồm 6 mô-đun</h2>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Mã</th><th>Mô-đun</th><th>Mình luyện ở đâu</th></tr></thead>
+        <tbody>
+          <tr><td>IU01</td><td>Hiểu biết về công nghệ thông tin cơ bản</td><td>Học trên lớp</td></tr>
+          <tr><td>IU02</td><td>Sử dụng máy tính cơ bản</td><td>Học trên lớp</td></tr>
+          <tr><td>IU03</td><td>Xử lý văn bản cơ bản</td><td><a href="#nls-word">Word</a></td></tr>
+          <tr><td>IU04</td><td>Sử dụng bảng tính cơ bản</td><td><a href="#nls-excel">Excel</a></td></tr>
+          <tr><td>IU05</td><td>Sử dụng trình chiếu cơ bản</td><td><a href="#nls-powerpoint">PowerPoint</a></td></tr>
+          <tr><td>IU06</td><td>Sử dụng Internet cơ bản</td><td><a href="#nls">Năng lực số &amp; AI</a></td></tr>
+        </tbody>
+      </table></div>
     </div>
+
     <div class="block">
-      <h2>Mình đang luyện</h2>
+      <h2>Mức nâng cao gồm 9 mô-đun</h2>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Mã</th><th>Mô-đun</th></tr></thead>
+        <tbody>
+          <tr><td>IU07</td><td>Xử lý văn bản nâng cao</td></tr>
+          <tr><td>IU08</td><td>Sử dụng bảng tính nâng cao</td></tr>
+          <tr><td>IU09</td><td>Sử dụng trình chiếu nâng cao</td></tr>
+          <tr><td>IU10</td><td>Sử dụng hệ quản trị cơ sở dữ liệu</td></tr>
+          <tr><td>IU11</td><td>Thiết kế đồ họa hai chiều</td></tr>
+          <tr><td>IU12</td><td>Biên tập ảnh</td></tr>
+          <tr><td>IU13</td><td>Biên tập trang thông tin điện tử</td></tr>
+          <tr><td>IU14</td><td>An toàn, bảo mật thông tin</td></tr>
+          <tr><td>IU15</td><td>Sử dụng phần mềm kế hoạch dự án</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="block">
+      <h2>Mình sẽ thi mức nào</h2>
+      <p>Mỗi trường tự quy định chuẩn đầu ra và các đơn vị thi được công nhận. Ngoài chuẩn trong nước, còn có chứng chỉ quốc tế như MOS (Microsoft Office Specialist), nhưng mình cần hỏi trường có công nhận hay không trước khi đăng ký. Việc cần làm:</p>
       <ul class="plain">
-        <li><strong>Word, Excel, PowerPoint</strong><span>Xem các trang <a href="#nls-word">Word</a>, <a href="#nls-excel">Excel</a> và <a href="#nls-powerpoint">PowerPoint</a>.</span></li>
-        <li><strong>Sử dụng internet an toàn</strong><span>Tra cứu, kiểm chứng thông tin và bảo mật tài khoản.</span></li>
+        <li><a href="https://online.fliphtml5.com/uvkeo/cbqt/" target="_blank" rel="noopener noreferrer">Sổ tay sinh viên 2025 của Trường Đại học Tây Đô</a><span>Đọc phần quy định đào tạo và chuẩn đầu ra.</span></li>
+        <li><a href="https://tdu.edu.vn/dao-tao" target="_blank" rel="noopener noreferrer">Trang Đào tạo của trường</a><span>Thông báo lịch thi và hướng dẫn của phòng đào tạo.</span></li>
+        <li><strong>Hỏi cố vấn học tập</strong><span>Xác nhận mức cần đạt và thời hạn nộp chứng chỉ.</span></li>
       </ul>
     </div>
+
     <div class="block">
-      <h2>Việc tiếp theo</h2>
-      <p>Hỏi phòng đào tạo hoặc cố vấn học tập về chuẩn đầu ra tin học của trường, hình thức thi và lịch thi gần nhất.</p>
+      <h2>Cách mình ôn</h2>
+      <ul class="plain">
+        <li><strong>Luyện theo từng mô-đun</strong><span>Mỗi tuần một mô-đun, thao tác trực tiếp trên máy.</span></li>
+        <li><strong>Làm đề thử</strong><span>Làm quen với thời gian và hình thức thi.</span></li>
+        <li><strong>Ghi lại lỗi hay gặp</strong><span>Ôn lại đúng chỗ mình còn yếu.</span></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Chứng chỉ mình đã có</h2>
+      <div class="empty">Mình chưa có chứng chỉ tin học. Khi có, mình sẽ cập nhật tại đây.</div>
+      <p class="src">Nguồn: <a href="https://thuvienphapluat.vn/van-ban/cong-nghe-thong-tin/thong-tu-03-2014-tt-btttt-chuan-ky-nang-su-dung-cong-nghe-thong-tin-223113.aspx" target="_blank" rel="noopener noreferrer">Thông tư 03/2014/TT-BTTTT</a>.</p>
     </div>
   </section>
 
   <section class="page" data-page="cc-ngoai-ngu" hidden>
     <p class="eyebrow">Chứng chỉ</p>
-    <h1>Ngoại ngữ</h1>
-    <p class="lead">Ngoại ngữ là kỹ năng quan trọng khi làm việc với khách quốc tế. Mình sẽ chọn ngoại ngữ và chứng chỉ theo quy định của trường.</p>
+    <h1>Chứng chỉ Ngoại ngữ</h1>
+    <p class="lead">Ở Việt Nam, năng lực ngoại ngữ được đo bằng Khung năng lực ngoại ngữ 6 bậc (Thông tư 01/2014/TT-BGDĐT), xây dựng dựa trên khung tham chiếu châu Âu CEFR. Nhiều chứng chỉ khác nhau đều được quy về khung này.</p>
+
     <div class="block">
-      <h2>Chứng chỉ mình đã có</h2>
-      <div class="empty">Mình chưa có chứng chỉ ngoại ngữ. Khi có, thông tin sẽ được cập nhật tại đây.</div>
+      <h2>Sáu bậc của khung</h2>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Bậc</th><th>CEFR</th><th>Nhóm trình độ</th></tr></thead>
+        <tbody>
+          <tr><td>Bậc 1</td><td>A1</td><td rowspan="2">Người dùng cơ bản</td></tr>
+          <tr><td>Bậc 2</td><td>A2</td></tr>
+          <tr><td>Bậc 3</td><td>B1</td><td rowspan="2">Người dùng độc lập</td></tr>
+          <tr><td>Bậc 4</td><td>B2</td></tr>
+          <tr><td>Bậc 5</td><td>C1</td><td rowspan="2">Người dùng thành thạo</td></tr>
+          <tr><td>Bậc 6</td><td>C2</td></tr>
+        </tbody>
+      </table></div>
     </div>
+
+    <div class="block">
+      <h2>Các chứng chỉ thường gặp</h2>
+      <ul class="plain">
+        <li><strong>VSTEP</strong><span>Kỳ thi đánh giá theo khung 6 bậc của Việt Nam, do các đơn vị được Bộ Giáo dục và Đào tạo cho phép tổ chức.</span></li>
+        <li><strong>IELTS</strong><span>Kỳ thi quốc tế có bốn kỹ năng nghe, nói, đọc, viết, dùng cho học tập và làm việc.</span></li>
+        <li><strong>TOEIC</strong><span>Đánh giá tiếng Anh trong môi trường làm việc. Bài thi nghe - đọc và bài thi nói - viết được thi riêng.</span></li>
+        <li><strong>TOEFL iBT</strong><span>Kỳ thi tiếng Anh học thuật, thường dùng khi xin học ở nước ngoài.</span></li>
+      </ul>
+      <p class="note">Bảng quy đổi điểm giữa các chứng chỉ khác nhau theo từng nguồn và từng thời điểm. Hai nguồn mình đọc ghi những mức điểm không giống nhau, nên mình không chép số ở đây. Hãy dùng bảng quy đổi của chính nhà trường.</p>
+    </div>
+
+    <div class="block">
+      <h2>Ngoại ngữ trong ngành khách sạn</h2>
+      <ul class="plain">
+        <li><strong>Giao tiếp với khách quốc tế</strong><span>Đón tiếp, nhận đặt phòng, giới thiệu dịch vụ, xử lý khiếu nại.</span></li>
+        <li><strong>Từ vựng chuyên ngành</strong><span>Tiền sảnh (front office), buồng phòng (housekeeping), nhà hàng (F&amp;B).</span></li>
+        <li><strong>Ngoại ngữ thứ hai là lợi thế</strong><span>Nhiều cơ sở lưu trú ưu tiên nhân viên nói thêm tiếng Trung, Hàn hoặc Nhật.</span></li>
+      </ul>
+    </div>
+
     <div class="block">
       <h2>Cách mình luyện mỗi tuần</h2>
       <ul class="plain">
-        <li><strong>Từ vựng ngành khách sạn</strong><span>Lễ tân, buồng phòng, nhà hàng, đặt phòng và thanh toán.</span></li>
+        <li><strong>Từ vựng ngành khách sạn</strong><span>Học theo nhóm tình huống: nhận phòng, trả phòng, gọi món, phản ánh.</span></li>
         <li><strong>Luyện nghe</strong><span>Nghe đều mỗi ngày, ghi lại từ mới.</span></li>
         <li><strong>Luyện nói</strong><span>Thực hành tình huống đón khách với bạn cùng lớp.</span></li>
       </ul>
     </div>
+
     <div class="block">
-      <h2>Việc tiếp theo</h2>
-      <p>Hỏi phòng đào tạo hoặc cố vấn học tập về chuẩn đầu ra ngoại ngữ của trường, các chứng chỉ được công nhận và lịch thi gần nhất.</p>
+      <h2>Mình sẽ thi chứng chỉ nào</h2>
+      <p>Mình cần biết trường yêu cầu bậc nào và công nhận chứng chỉ nào trước khi chọn kỳ thi:</p>
+      <ul class="plain">
+        <li><a href="https://online.fliphtml5.com/uvkeo/cbqt/" target="_blank" rel="noopener noreferrer">Sổ tay sinh viên 2025 của Trường Đại học Tây Đô</a><span>Đọc phần quy định đào tạo và chuẩn đầu ra.</span></li>
+        <li><a href="https://tdu.edu.vn/dao-tao" target="_blank" rel="noopener noreferrer">Trang Đào tạo của trường</a><span>Thông báo lịch thi và hướng dẫn của phòng đào tạo.</span></li>
+        <li><strong>Hỏi cố vấn học tập</strong><span>Xác nhận bậc cần đạt và thời hạn nộp chứng chỉ.</span></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Chứng chỉ mình đã có</h2>
+      <div class="empty">Mình chưa có chứng chỉ ngoại ngữ. Khi có, mình sẽ cập nhật tại đây.</div>
+      <p class="src">Nguồn: <a href="https://hethongphapluat.com/phap-luat/huong-dan/ban-da-biet-cach-quy-doi-diem-ielts-toeic-sang-khung-nang-luc-ngoai-ngu-6-bac-chuan-nhat-chua.html" target="_blank" rel="noopener noreferrer">Khung năng lực ngoại ngữ 6 bậc và bảng quy đổi</a>.</p>
     </div>
   </section>
 
@@ -673,7 +1049,8 @@ td:first-child { font-weight: 600; }
   <section class="page" data-page="kh" hidden>
     <p class="eyebrow">Kế hoạch</p>
     <h1>Bốn năm đại học</h1>
-    <p class="lead">Lộ trình dự kiến cho giai đoạn 2026–2030. Mình sẽ điều chỉnh theo chương trình đào tạo của trường.</p>
+    <p class="lead">Lộ trình dự kiến cho niên khóa 2026–2030. Mình sẽ điều chỉnh theo chương trình đào tạo của trường.</p>
+    <p class="note">Trang ngành của trường ghi thời gian đào tạo toàn thời gian của ngành Quản trị khách sạn là 3,5 năm (<a href="https://tdu.edu.vn/gioi-thieu-nganh-hoc/13/gioi-thieu-nganh-quan-tri-khach-san" target="_blank" rel="noopener noreferrer">nguồn</a>), nên năm cuối có thể ngắn hơn. Mình sẽ đối chiếu với kế hoạch đào tạo của lớp.</p>
     <div class="block">
       <div class="years">
         <div class="year" data-i="0"><small>2026–2027 <span class="chip chip--now now-flag">Đang ở đây</span></small><h3>Xây nền tảng</h3><ul><li>Học tốt các học phần đại cương</li><li>Luyện Word, Excel, PowerPoint và AI</li><li>Bắt đầu ôn tin học và ngoại ngữ</li><li>Làm quen NCKH</li></ul></div>
@@ -736,7 +1113,7 @@ td:first-child { font-weight: 600; }
   var GROUPS = {
     home: { pages: [['trang-chu', 'Trang chủ']] },
     nls: { pages: [['nls', 'Tổng quan'], ['nls-word', 'Word'], ['nls-excel', 'Excel'], ['nls-powerpoint', 'PowerPoint'], ['nls-ai', 'AI']] },
-    nckh: { pages: [['nckh', 'Tổng quan'], ['nckh-2026-2027', '2026–2027'], ['nckh-2027-2028', '2027–2028'], ['nckh-2028-2029', '2028–2029']] },
+    nckh: { pages: [['nckh', 'Tổng quan'], ['nckh-boi-canh', 'Bối cảnh 2025–2027'], ['nckh-giai-thuong', 'Giải thưởng'], ['nckh-tai-lieu', 'Tài liệu'], ['nckh-2026-2027', 'Kế hoạch 2026–2027'], ['nckh-2027-2028', 'Kế hoạch 2027–2028'], ['nckh-2028-2029', 'Kế hoạch 2028–2029']] },
     cc: { pages: [['cc', 'Tổng quan'], ['cc-tin-hoc', 'Tin học'], ['cc-ngoai-ngu', 'Ngoại ngữ']] },
     kh: { pages: [['kh', 'Tổng quan'], ['kh-2026', '2026'], ['kh-2027', '2027']] }
   };
