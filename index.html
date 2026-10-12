@@ -1,0 +1,835 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Hồ sơ năng lực Bảo Trân</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Bricolage+Grotesque:opsz,wght@12..96,600;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky site bar with section tabs; one page visible at a time; the home hero pairs the name with a hotel room key card (check-in 2026, check-out 2030) */
+:root {
+  --bg: #F3F6F1;
+  --surface: #FFFFFF;
+  --surface-2: #E7EEE5;
+  --fg: #17261F;
+  --muted: #506157;
+  --line: #D0DBCE;
+  --accent: #1F5A41;
+  --accent-fg: #FFFFFF;
+  --lotus: #B3365F;
+  --lotus-fg: #FFFFFF;
+  --card-bg: #1F5A41;
+  --card-fg: #FFFFFF;
+  --ok: #1F6B45;
+  --ok-bg: #DDEFE3;
+  --plan: #34567A;
+  --plan-bg: #E0E9F2;
+  --look: #7F5300;
+  --look-bg: #F6E8C8;
+  --font-display: "Bricolage Grotesque", "Be Vietnam Pro", system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --radius: 10px;
+  --gutter: clamp(16px, 4vw, 32px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F1A15;
+    --surface: #16251E;
+    --surface-2: #1D3027;
+    --fg: #E6EFE8;
+    --muted: #9DB0A4;
+    --line: #2B4236;
+    --accent: #6FBF94;
+    --accent-fg: #0F1A15;
+    --lotus: #E0709A;
+    --lotus-fg: #2A0E19;
+    --card-bg: #2A6A4D;
+    --card-fg: #F2FAF5;
+    --ok: #7BD1A0;
+    --ok-bg: #1B3A2A;
+    --plan: #8FB4DA;
+    --plan-bg: #1E2E40;
+    --look: #E2B659;
+    --look-bg: #3A2F12;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F1A15;
+  --surface: #16251E;
+  --surface-2: #1D3027;
+  --fg: #E6EFE8;
+  --muted: #9DB0A4;
+  --line: #2B4236;
+  --accent: #6FBF94;
+  --accent-fg: #0F1A15;
+  --lotus: #E0709A;
+  --lotus-fg: #2A0E19;
+  --card-bg: #2A6A4D;
+  --card-fg: #F2FAF5;
+  --ok: #7BD1A0;
+  --ok-bg: #1B3A2A;
+  --plan: #8FB4DA;
+  --plan-bg: #1E2E40;
+  --look: #E2B659;
+  --look-bg: #3A2F12;
+  color-scheme: dark;
+}
+
+body { background: var(--bg); color: var(--fg); font: 400 1rem/1.65 var(--font-body); }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { color: var(--lotus); }
+:focus-visible { outline: 2px solid var(--lotus); outline-offset: 2px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.12; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; }
+h2 { font-size: clamp(1.35rem, 3vw, 1.7rem); font-weight: 600; }
+h3 { font-size: 1.1rem; font-weight: 600; }
+p { margin: 0; max-width: 65ch; }
+ul, ol { margin: 0; }
+
+/* site bar */
+.site { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); }
+.bar { max-width: 1080px; margin-inline: auto; padding: 0.7rem var(--gutter); display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.brand { font: 800 1.1rem var(--font-display); color: var(--fg); text-decoration: none; white-space: nowrap; }
+.brand span { font: 400 0.72rem var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-inline-start: 0.5rem; }
+.primary { display: flex; gap: 0.25rem; overflow-x: auto; min-width: 0; margin-inline-start: auto; scrollbar-width: none; }
+.primary::-webkit-scrollbar { display: none; }
+.primary a { padding: 0.45rem 0.85rem; border-radius: 999px; color: var(--muted); text-decoration: none; font-weight: 500; font-size: 0.95rem; white-space: nowrap; }
+.primary a:hover { color: var(--fg); background: var(--surface-2); }
+.primary a[aria-current="page"] { background: var(--accent); color: var(--accent-fg); }
+@media (max-width: 720px) { .primary { margin-inline-start: 0; flex: 1 1 100%; } }
+
+/* main */
+main { max-width: 1080px; margin-inline: auto; padding: 0 var(--gutter) 3rem; }
+.subnav { display: flex; gap: 1.25rem; overflow-x: auto; border-bottom: 1px solid var(--line); margin-top: 1rem; scrollbar-width: none; }
+.subnav::-webkit-scrollbar { display: none; }
+.subnav a { padding: 0.7rem 0; color: var(--muted); text-decoration: none; font-weight: 500; white-space: nowrap; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.subnav a:hover { color: var(--fg); }
+.subnav a[aria-current="page"] { color: var(--fg); border-bottom-color: var(--lotus); }
+.subnav[hidden] { display: none; }
+
+.page { display: grid; gap: 0; padding-top: 2rem; }
+.page[hidden] { display: none; }
+.eyebrow { font: 500 0.75rem var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--lotus); margin-bottom: 0.6rem; }
+.lead { font-size: 1.125rem; color: var(--fg); margin-top: 1rem; }
+.block { display: grid; gap: 1rem; padding-block: 1.75rem; border-top: 1px solid var(--line); margin-top: 2rem; align-content: start; }
+.page > .lead + .block, .page > h1 + .block { margin-top: 2rem; }
+.note { font-size: 0.9rem; color: var(--muted); }
+
+/* hero */
+.hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 2.5rem; align-items: center; padding-block: 1rem 0.5rem; }
+.hero h1 { font-size: clamp(2.5rem, 7vw, 4.6rem); line-height: 1; letter-spacing: -0.025em; }
+.hero h1 span { display: block; }
+.hero h1 span + span { color: var(--accent); }
+.hero .sub { font: 500 1.05rem var(--font-body); color: var(--muted); margin-top: 1rem; }
+.hero .intro { margin-top: 1.25rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+.btn { display: inline-block; padding: 0.65rem 1.1rem; border-radius: var(--radius); font: 600 0.95rem var(--font-body); text-decoration: none; border: 1px solid var(--line); color: var(--fg); background: var(--surface); }
+.btn:hover { color: var(--fg); border-color: var(--accent); }
+.btn--primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+.btn--primary:hover { color: var(--accent-fg); background: var(--accent); filter: brightness(1.08); }
+@media (max-width: 800px) { .hero { grid-template-columns: minmax(0, 1fr); gap: 2rem; } }
+
+.keycard-wrap { display: grid; gap: 0.75rem; justify-items: end; }
+.keycard { position: relative; width: min(100%, 22rem); aspect-ratio: 1.586 / 1; border-radius: 14px; background: var(--card-bg); color: var(--card-fg); padding: 1rem 1.15rem; display: grid; grid-template-rows: auto 1fr auto; overflow: hidden; box-shadow: 0 14px 30px -18px rgba(0, 0, 0, 0.5); }
+.kc-top { display: flex; justify-content: space-between; gap: 0.75rem; align-items: start; font: 500 0.68rem var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; }
+.kc-tag { background: var(--lotus); color: var(--lotus-fg); padding: 0.15rem 0.5rem; border-radius: 999px; white-space: nowrap; }
+.kc-stripe { align-self: center; margin-inline: -1.15rem; height: 2.1rem; background: rgba(0, 0, 0, 0.5); }
+.kc-bottom { display: flex; justify-content: space-between; align-items: end; gap: 1rem; }
+.kc-room small { display: block; font: 500 0.68rem var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.85; }
+.kc-room strong { font: 500 2.6rem/1 var(--font-mono); letter-spacing: 0.04em; }
+.kc-dates { text-align: right; font: 500 0.72rem/1.5 var(--font-mono); letter-spacing: 0.04em; text-transform: uppercase; }
+.keycard-wrap .note { max-width: 22rem; text-align: right; }
+@media (max-width: 800px) { .keycard-wrap { justify-items: start; } .keycard-wrap .note { text-align: left; } }
+
+/* content parts */
+.cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem; }
+@media (max-width: 720px) { .cols { grid-template-columns: minmax(0, 1fr); gap: 2rem; } }
+.facts { display: grid; grid-template-columns: minmax(6.5rem, 9rem) minmax(0, 1fr); gap: 0.7rem 1.25rem; margin: 0; }
+.facts dt { font: 500 0.75rem var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding-top: 0.2rem; }
+.facts dd { margin: 0; }
+.tags { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; }
+.tags li { padding: 0.35rem 0.8rem; border-radius: 999px; background: var(--surface-2); font-weight: 500; }
+.plain { list-style: none; padding: 0; display: grid; gap: 0.75rem; }
+.plain li { display: grid; gap: 0.1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--line); }
+.plain li:last-child { border-bottom: 0; padding-bottom: 0; }
+.plain strong { font-weight: 600; }
+.plain span { color: var(--muted); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem; }
+.tile { display: grid; gap: 0.35rem; padding: 1.1rem 1.2rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); text-decoration: none; color: var(--fg); align-content: start; }
+.tile:hover { border-color: var(--accent); color: var(--fg); }
+.tile b { font: 600 1.1rem var(--font-display); }
+.tile span { color: var(--muted); font-size: 0.95rem; }
+
+.domains { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; list-style: none; padding: 0; }
+.domains li { background: var(--surface); padding: 1rem 1.1rem; display: grid; gap: 0.3rem; align-content: start; }
+.domains small { font: 500 0.72rem var(--font-mono); letter-spacing: 0.1em; color: var(--lotus); }
+.domains b { font-weight: 600; }
+@media (max-width: 720px) { .domains { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 460px) { .domains { grid-template-columns: minmax(0, 1fr); } }
+
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 34rem; }
+th { text-align: left; font: 500 0.72rem var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding: 0.75rem 1rem; background: var(--surface-2); border-bottom: 1px solid var(--line); }
+td { padding: 0.8rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 600; }
+
+.chip { display: inline-block; padding: 0.12rem 0.65rem; border-radius: 999px; font: 500 0.74rem var(--font-mono); white-space: nowrap; }
+.chip--now { background: var(--ok-bg); color: var(--ok); }
+.chip--plan { background: var(--plan-bg); color: var(--plan); }
+.chip--look { background: var(--look-bg); color: var(--look); }
+
+.steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.75rem; list-style: none; padding: 0; counter-reset: s; }
+.steps li { display: grid; gap: 0.5rem; align-content: start; padding-top: 0.9rem; border-top: 3px solid var(--line); font-size: 0.95rem; }
+.steps li::before { counter-increment: s; content: counter(s); width: 1.7rem; height: 1.7rem; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--line); font: 500 0.8rem var(--font-mono); color: var(--muted); }
+.steps li.is-now { border-top-color: var(--lotus); font-weight: 600; }
+.steps li.is-now::before { background: var(--lotus); color: var(--lotus-fg); border-color: var(--lotus); }
+@media (max-width: 720px) { .steps { grid-template-columns: minmax(0, 1fr); gap: 0; } .steps li { grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 0.75rem; padding-block: 0.7rem; border-top: 0; border-bottom: 1px solid var(--line); } }
+
+.years { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; }
+.year { display: grid; gap: 0.6rem; align-content: start; border-top: 3px solid var(--line); padding-top: 0.9rem; }
+.year.is-now { border-top-color: var(--lotus); }
+.year small { font: 500 0.75rem var(--font-mono); letter-spacing: 0.08em; color: var(--muted); display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+.year ul { padding-left: 1.1rem; display: grid; gap: 0.35rem; color: var(--fg); }
+.year .now-flag { display: none; }
+.year.is-now .now-flag { display: inline-block; }
+@media (max-width: 900px) { .years { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .years { grid-template-columns: minmax(0, 1fr); } }
+
+.calc { display: grid; gap: 1.25rem; padding: 1.25rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 1rem; }
+.field { display: grid; gap: 0.35rem; min-width: 0; }
+.field label { font: 500 0.75rem var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.field input { font: 500 1.05rem var(--font-mono); padding: 0.6rem 0.75rem; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); width: 100%; box-sizing: border-box; min-width: 0; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: 1rem; }
+.kpi { display: grid; gap: 0.2rem; padding: 0.9rem 1rem; border-radius: 8px; background: var(--surface-2); }
+.kpi small { font: 500 0.72rem var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.kpi b { font: 500 1.5rem var(--font-mono); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.warn { color: var(--look); font-size: 0.9rem; min-height: 1.4em; }
+
+.prompt { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: start; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.prompt:last-child { border-bottom: 0; }
+.prompt p { max-width: none; }
+.copy { font: 600 0.85rem var(--font-body); padding: 0.45rem 0.85rem; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer; white-space: nowrap; }
+.copy:hover { border-color: var(--accent); }
+@media (max-width: 560px) { .prompt { grid-template-columns: minmax(0, 1fr); } .copy { justify-self: start; } }
+.empty { padding: 1.25rem; border: 1px dashed var(--line); border-radius: var(--radius); color: var(--muted); }
+
+.foot { max-width: 1080px; margin-inline: auto; padding: 1.5rem var(--gutter) 2rem; border-top: 1px solid var(--line); font-size: 0.85rem; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { .page:not([hidden]) { animation: rise 0.25s ease-out; } }
+@keyframes rise { from { opacity: 0.4; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+</style>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="#trang-chu">Bảo Trân<span>Hồ sơ năng lực</span></a>
+    <nav class="primary" aria-label="Các mục chính">
+      <a href="#trang-chu" data-group="home" aria-current="page">Trang chủ</a>
+      <a href="#nls" data-group="nls">Năng lực số &amp; AI</a>
+      <a href="#nckh" data-group="nckh">NCKH</a>
+      <a href="#cc" data-group="cc">Chứng chỉ</a>
+      <a href="#kh" data-group="kh">Kế hoạch</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <nav class="subnav" id="subnav" aria-label="Các trang con" hidden></nav>
+
+  <!-- TRANG CHỦ -->
+  <section class="page" data-page="trang-chu">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Hồ sơ năng lực · Niên khóa 2026–2030</p>
+        <h1><span>Lương Nguyễn</span><span>Bảo Trân</span></h1>
+        <p class="sub">Sinh viên Quản trị khách sạn, Trường Đại học Tây Đô</p>
+        <p class="intro">Xin chào, mình là Bảo Trân. Mình học ngành Quản trị khách sạn, hòa đồng, hoạt bát và thích đi đây đi đó. Trang web này lưu lại việc học, kỹ năng số, chứng chỉ và kế hoạch của mình trong bốn năm đại học.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="#kh">Xem kế hoạch</a>
+          <a class="btn" href="#nls">Năng lực số &amp; AI</a>
+        </div>
+      </div>
+      <div class="keycard-wrap">
+        <div class="keycard" role="img" aria-label="Thẻ phòng khách sạn: phòng 2630, nhận phòng 2026, trả phòng 2030">
+          <div class="kc-top"><span>Đại học Tây Đô<br>Quản trị khách sạn</span><span class="kc-tag">Đang lưu trú</span></div>
+          <div class="kc-stripe"></div>
+          <div class="kc-bottom">
+            <div class="kc-room"><small>Phòng</small><strong>2630</strong></div>
+            <div class="kc-dates">Nhận phòng 2026<br>Trả phòng 2030</div>
+          </div>
+        </div>
+        <p class="note">Bốn năm đại học, tính như một kỳ lưu trú.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="cols">
+        <div style="display:grid;gap:1rem;align-content:start">
+          <h2>Thông tin cá nhân</h2>
+          <dl class="facts">
+            <dt>Họ và tên</dt><dd>Lương Nguyễn Bảo Trân</dd>
+            <dt>Quê quán</dt><dd>Hòa Điền, An Giang</dd>
+            <dt>Nơi ở</dt><dd>Cần Thơ</dd>
+            <dt>Liên hệ</dt><dd>Qua email sinh viên của trường</dd>
+          </dl>
+        </div>
+        <div style="display:grid;gap:1rem;align-content:start">
+          <h2>Thông tin học tập</h2>
+          <dl class="facts">
+            <dt>Trường</dt><dd>Đại học Tây Đô</dd>
+            <dt>Khoa</dt><dd>Quản trị kinh doanh - Du lịch</dd>
+            <dt>Ngành</dt><dd>Quản trị khách sạn</dd>
+            <dt>Niên khóa</dt><dd>2026–2030</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="cols">
+        <div style="display:grid;gap:1rem;align-content:start">
+          <h2>Điểm mạnh</h2>
+          <ul class="tags"><li>Hòa đồng</li><li>Hoạt bát</li><li>Tiếp thu nhanh</li></ul>
+        </div>
+        <div style="display:grid;gap:1rem;align-content:start">
+          <h2>Điểm cần cải thiện</h2>
+          <p>Đôi khi mình còn nóng tính và khó kiềm chế cảm xúc. Mình đang tập dừng lại hít thở sâu trước khi phản hồi và nghe hết ý người khác rồi mới nói.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Sở thích</h2>
+      <ul class="tags"><li>Nghe nhạc</li><li>Đọc sách</li><li>Đi du lịch</li><li>Chơi thể thao</li></ul>
+    </div>
+
+    <div class="block">
+      <h2>Đi tiếp</h2>
+      <div class="tiles">
+        <a class="tile" href="#nls"><b>Năng lực số &amp; AI</b><span>Word, Excel, PowerPoint và cách mình dùng AI.</span></a>
+        <a class="tile" href="#nckh"><b>NCKH</b><span>Hoạt động nghiên cứu khoa học theo từng năm học.</span></a>
+        <a class="tile" href="#cc"><b>Chứng chỉ</b><span>Tin học và ngoại ngữ: tình trạng và kế hoạch.</span></a>
+        <a class="tile" href="#kh"><b>Kế hoạch</b><span>Lộ trình bốn năm và việc cần làm trước mắt.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NĂNG LỰC SỐ & AI -->
+  <section class="page" data-page="nls" hidden>
+    <p class="eyebrow">Năng lực số &amp; AI</p>
+    <h1>Năng lực số</h1>
+    <p class="lead">Năng lực số là khả năng sử dụng công nghệ số, công cụ trực tuyến và trí tuệ nhân tạo một cách thành thạo, an toàn, sáng tạo và có trách nhiệm để học tập, làm việc và giải quyết vấn đề trong đời sống.</p>
+
+    <div class="block">
+      <h2>Khung năng lực số cho người học</h2>
+      <p>Khung này được ban hành theo Thông tư số 02/2025/TT-BGDĐT và gồm 6 miền năng lực.</p>
+      <ol class="domains">
+        <li><small>MIỀN 1</small><b>Năng lực thông tin và dữ liệu</b></li>
+        <li><small>MIỀN 2</small><b>Giao tiếp và hợp tác trong môi trường số</b></li>
+        <li><small>MIỀN 3</small><b>Sáng tạo nội dung số</b></li>
+        <li><small>MIỀN 4</small><b>An toàn và an ninh trên không gian mạng</b></li>
+        <li><small>MIỀN 5</small><b>Giải quyết vấn đề</b></li>
+        <li><small>MIỀN 6</small><b>Ứng dụng trí tuệ nhân tạo (AI)</b></li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h2>Vai trò của năng lực số</h2>
+      <ul class="plain">
+        <li><strong>Trong học tập</strong><span>Giúp tra cứu, kiểm chứng thông tin, tận dụng học liệu số và công cụ mới để tự học hiệu quả hơn.</span></li>
+        <li><strong>Trong công việc</strong><span>Tăng năng suất, tối ưu quy trình, giảm chi phí và tạo lợi thế cạnh tranh trong thời kỳ chuyển đổi số.</span></li>
+        <li><strong>Trong đời sống</strong><span>Tiếp cận nhanh dịch vụ công trực tuyến, bảo mật dữ liệu cá nhân và ứng xử chuẩn mực trên không gian mạng.</span></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Năng lực số trong ngành khách sạn</h2>
+      <p>Trong khách sạn, năng lực số xuất hiện ở phần mềm quản lý lưu trú, đặt phòng trực tuyến, chăm sóc khách qua mạng xã hội, thống kê doanh thu và bảo mật thông tin của khách. Vì vậy mình luyện bốn nhóm kỹ năng ngay từ năm nhất.</p>
+      <div class="tiles">
+        <a class="tile" href="#nls-word"><b>Word</b><span>Soạn văn bản đúng chuẩn.</span></a>
+        <a class="tile" href="#nls-excel"><b>Excel</b><span>Xử lý số liệu và chỉ số khách sạn.</span></a>
+        <a class="tile" href="#nls-powerpoint"><b>PowerPoint</b><span>Trình bày ý tưởng gọn và rõ.</span></a>
+        <a class="tile" href="#nls-ai"><b>AI</b><span>Dùng AI có kiểm chứng và có trách nhiệm.</span></a>
+      </div>
+      <p class="note">Nguồn: Thông tư số 02/2025/TT-BGDĐT của Bộ Giáo dục và Đào tạo.</p>
+    </div>
+  </section>
+
+  <section class="page" data-page="nls-word" hidden>
+    <p class="eyebrow">Năng lực số &amp; AI</p>
+    <h1>Word</h1>
+    <p class="lead">Word là công cụ mình dùng nhiều nhất để làm bài tập, báo cáo và văn bản. Mình luyện để văn bản trình bày đúng chuẩn và dễ đọc.</p>
+    <div class="block">
+      <h2>Kỹ năng mình đang luyện</h2>
+      <ul class="plain">
+        <li><strong>Định dạng chuẩn</strong><span>Font, cỡ chữ, giãn dòng, căn lề.</span></li>
+        <li><strong>Styles và mục lục tự động</strong><span>Dùng Heading để mục lục tự cập nhật.</span></li>
+        <li><strong>Bảng, hình ảnh, đánh số trang</strong><span>Kèm đầu trang và chân trang.</span></li>
+        <li><strong>Trộn thư (Mail Merge)</strong><span>Gửi cùng một nội dung cho nhiều người.</span></li>
+        <li><strong>Xuất PDF</strong><span>Chia sẻ văn bản bằng liên kết.</span></li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Sản phẩm mình sẽ làm</h2>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Sản phẩm</th><th>Luyện kỹ năng</th><th>Trạng thái</th></tr></thead>
+        <tbody>
+          <tr><td>Thư xác nhận đặt phòng</td><td>Mail Merge, bảng, chữ ký</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+          <tr><td>Brochure giới thiệu một khách sạn</td><td>Bố cục, hình ảnh, chia cột</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+          <tr><td>Bài tiểu luận có mục lục tự động</td><td>Styles, đánh số trang</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Mỗi sản phẩm làm xong sẽ được đăng lên trang này.</p>
+    </div>
+    <div class="block">
+      <h2>Dùng trong ngành khách sạn</h2>
+      <ul class="plain">
+        <li><strong>Thư từ với khách</strong><span>Xác nhận đặt phòng, thư cảm ơn, thư phản hồi.</span></li>
+        <li><strong>Quy trình và biểu mẫu</strong><span>Quy trình nghiệp vụ (SOP), biểu mẫu check-in và check-out.</span></li>
+        <li><strong>Báo cáo nội bộ</strong><span>Báo cáo ca làm việc, biên bản họp, kế hoạch sự kiện.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page" data-page="nls-excel" hidden>
+    <p class="eyebrow">Năng lực số &amp; AI</p>
+    <h1>Excel</h1>
+    <p class="lead">Excel giúp mình xử lý số liệu và đọc được những chỉ số cơ bản mà khách sạn nào cũng theo dõi mỗi ngày.</p>
+    <div class="block">
+      <h2>Kỹ năng mình đang luyện</h2>
+      <ul class="plain">
+        <li><strong>Nhập liệu và định dạng bảng</strong><span>Sắp xếp và lọc dữ liệu.</span></li>
+        <li><strong>Hàm cơ bản</strong><span>SUM, AVERAGE, MIN, MAX, IF, COUNTIF, SUMIF.</span></li>
+        <li><strong>Hàm tra cứu</strong><span>VLOOKUP hoặc XLOOKUP.</span></li>
+        <li><strong>Biểu đồ và định dạng có điều kiện</strong><span>Làm nổi bật số liệu cần chú ý.</span></li>
+        <li><strong>PivotTable</strong><span>Tổng hợp dữ liệu nhanh.</span></li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Ba chỉ số khách sạn nên biết</h2>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Chỉ số</th><th>Cách tính</th><th>Cho biết</th></tr></thead>
+        <tbody>
+          <tr><td>Công suất phòng (Occupancy)</td><td>Số phòng đã bán ÷ số phòng có thể bán × 100%</td><td>Bao nhiêu phần trăm phòng có khách</td></tr>
+          <tr><td>Giá phòng trung bình (ADR)</td><td>Doanh thu phòng ÷ số phòng đã bán</td><td>Mỗi phòng bán được bao nhiêu tiền</td></tr>
+          <tr><td>Doanh thu trên mỗi phòng có sẵn (RevPAR)</td><td>Doanh thu phòng ÷ số phòng có thể bán</td><td>Hiệu quả khai thác toàn bộ số phòng</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="block">
+      <h2>Tự tính thử</h2>
+      <p class="note">Số liệu giả định để luyện tập, không phải số liệu của một khách sạn thật. Bạn có thể đổi ba ô bên dưới.</p>
+      <div class="calc">
+        <div class="fields">
+          <div class="field"><label for="c-avail">Số phòng có thể bán</label><input id="c-avail" type="number" inputmode="numeric" min="0" step="1" value="40"></div>
+          <div class="field"><label for="c-sold">Số phòng đã bán</label><input id="c-sold" type="number" inputmode="numeric" min="0" step="1" value="28"></div>
+          <div class="field"><label for="c-rev">Doanh thu phòng (đồng)</label><input id="c-rev" type="number" inputmode="numeric" min="0" step="100000" value="19600000"></div>
+        </div>
+        <div class="kpis" aria-live="polite">
+          <div class="kpi"><small>Công suất phòng</small><b id="o-occ">70%</b></div>
+          <div class="kpi"><small>ADR</small><b id="o-adr">700.000 đ</b></div>
+          <div class="kpi"><small>RevPAR</small><b id="o-revpar">490.000 đ</b></div>
+        </div>
+        <p class="warn" id="c-note"></p>
+      </div>
+    </div>
+    <div class="block">
+      <h2>Sản phẩm mình sẽ làm</h2>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Sản phẩm</th><th>Luyện kỹ năng</th><th>Trạng thái</th></tr></thead>
+        <tbody>
+          <tr><td>Bảng theo dõi công suất phòng 30 ngày</td><td>Hàm, biểu đồ đường</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+          <tr><td>Bảng định mức vật tư buồng phòng</td><td>SUMIF, định dạng có điều kiện</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+          <tr><td>Bảng tổng hợp phản hồi của khách</td><td>PivotTable, biểu đồ cột</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="page" data-page="nls-powerpoint" hidden>
+    <p class="eyebrow">Năng lực số &amp; AI</p>
+    <h1>PowerPoint</h1>
+    <p class="lead">Mình dùng PowerPoint để trình bày ý tưởng gọn, rõ và dễ nhớ. Ngành khách sạn cần giới thiệu dịch vụ và điểm đến nhiều, nên kỹ năng này rất hữu ích.</p>
+    <div class="block">
+      <h2>Kỹ năng mình đang luyện</h2>
+      <ul class="plain">
+        <li><strong>Bố cục và chủ đề (theme)</strong><span>Thống nhất màu sắc và phông chữ cho cả bài.</span></li>
+        <li><strong>Hình ảnh, biểu đồ, SmartArt</strong><span>Dùng hình và số liệu thay cho đoạn văn dài.</span></li>
+        <li><strong>Hiệu ứng vừa phải và ghi chú thuyết trình</strong><span>Dùng Notes để nhớ ý khi nói.</span></li>
+        <li><strong>Xuất PDF hoặc video</strong><span>Chia sẻ bài thuyết trình dễ dàng.</span></li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Nguyên tắc mình theo</h2>
+      <ul class="plain">
+        <li><strong>Mỗi slide một ý chính</strong><span>Người xem nhớ được một ý rõ hơn nhiều ý lẫn nhau.</span></li>
+        <li><strong>Chữ ngắn gọn</strong><span>Ưu tiên hình ảnh và số liệu.</span></li>
+        <li><strong>Chữ đủ lớn</strong><span>Ngồi cuối lớp vẫn đọc được.</span></li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Sản phẩm mình sẽ làm</h2>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Sản phẩm</th><th>Luyện kỹ năng</th><th>Trạng thái</th></tr></thead>
+        <tbody>
+          <tr><td>Giới thiệu một điểm đến ở Cần Thơ hoặc An Giang (8–10 slide)</td><td>Bố cục, hình ảnh, kể chuyện</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+          <tr><td>Quy trình đón tiếp khách cho buổi đào tạo nội bộ</td><td>SmartArt, ghi chú thuyết trình</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="block">
+      <h2>Dùng trong ngành khách sạn</h2>
+      <ul class="plain">
+        <li><strong>Giới thiệu dịch vụ</strong><span>Điểm đến, gói tour, tiện ích của khách sạn.</span></li>
+        <li><strong>Đào tạo nhân viên</strong><span>Trình bày quy trình đón tiếp khách.</span></li>
+        <li><strong>Báo cáo và đề xuất</strong><span>Kết quả kinh doanh, ý tưởng sự kiện.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page" data-page="nls-ai" hidden>
+    <p class="eyebrow">Năng lực số &amp; AI</p>
+    <h1>AI</h1>
+    <p class="lead">Mình dùng trí tuệ nhân tạo như một trợ lý: giúp lên ý tưởng, chỉnh sửa và tra cứu nhanh, còn kiểm chứng và quyết định là việc của mình.</p>
+    <div class="block">
+      <h2>Năm nguyên tắc dùng AI</h2>
+      <ul class="plain">
+        <li><strong>Luôn kiểm chứng</strong><span>Đối chiếu thông tin AI đưa ra với nguồn đáng tin cậy.</span></li>
+        <li><strong>Giữ kín thông tin cá nhân</strong><span>Không nhập thông tin của mình, của bạn bè hay của khách hàng.</span></li>
+        <li><strong>Bài làm là của mình</strong><span>AI hỗ trợ lên ý tưởng và chỉnh sửa, không làm thay.</span></li>
+        <li><strong>Nói rõ khi có dùng AI</strong><span>Theo quy định học thuật của trường và của giảng viên.</span></li>
+        <li><strong>Tôn trọng bản quyền và sự thật</strong><span>Không dùng AI để tạo nội dung sai lệch.</span></li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Câu lệnh mẫu cho ngành khách sạn</h2>
+      <div>
+        <div class="prompt"><p id="p1">Hãy đóng vai nhân viên lễ tân khách sạn 4 sao. Soạn email lịch sự xin lỗi khách vì phòng bị ồn và đề xuất đổi phòng.</p><button type="button" class="copy" data-target="p1" aria-live="polite">Sao chép</button></div>
+        <div class="prompt"><p id="p2">Lập lịch trình 3 ngày 2 đêm ở Cần Thơ cho gia đình 4 người, ngân sách vừa phải, có gợi ý ăn uống. Ghi rõ những chỗ mình cần kiểm tra lại giờ mở cửa và giá.</p><button type="button" class="copy" data-target="p2" aria-live="polite">Sao chép</button></div>
+        <div class="prompt"><p id="p3">Tóm tắt bài viết sau thành 5 ý chính và chỉ ra 2 điểm mình nên kiểm chứng lại bằng nguồn khác: [dán nội dung bài viết vào đây]</p><button type="button" class="copy" data-target="p3" aria-live="polite">Sao chép</button></div>
+      </div>
+    </div>
+    <div class="block">
+      <h2>Mẫu nhật ký sử dụng AI</h2>
+      <p>Mỗi lần dùng AI cho bài làm, mình ghi lại bốn điều sau. Dòng đầu là ví dụ minh họa cách ghi.</p>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Việc làm</th><th>Công cụ AI</th><th>Cách kiểm chứng</th><th>Kết quả</th></tr></thead>
+        <tbody>
+          <tr><td>Soạn email xin lỗi khách (ví dụ)</td><td>Trợ lý AI</td><td>Đối chiếu với quy trình xử lý phản ánh, sửa lại giọng văn</td><td>Chỉnh sửa rồi mới dùng</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="block">
+      <h2>Mình muốn học thêm</h2>
+      <ul class="plain">
+        <li><strong>Viết câu lệnh rõ hơn</strong><span>Nêu vai trò, bối cảnh và định dạng mong muốn.</span></li>
+        <li><strong>Phân tích phản hồi của khách</strong><span>Dùng AI để gom nhóm ý kiến, rồi tự kiểm tra lại.</span></li>
+        <li><strong>Nhận biết thông tin do AI bịa ra</strong><span>Phát hiện số liệu, tên và nguồn không có thật.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- NCKH -->
+  <section class="page" data-page="nckh" hidden>
+    <p class="eyebrow">NCKH</p>
+    <h1>Nghiên cứu khoa học</h1>
+    <p class="lead">Nghiên cứu khoa học giúp sinh viên học cách đặt câu hỏi, tìm tài liệu, thu thập số liệu và trình bày kết quả có căn cứ. Trang này ghi lại những gì mình làm theo từng năm học.</p>
+    <div class="block">
+      <h2>Các hướng mình đang cân nhắc</h2>
+      <ul class="tags">
+        <li>Trải nghiệm và mức độ hài lòng của khách</li>
+        <li>Du lịch bền vững</li>
+        <li>Công nghệ và AI trong dịch vụ lưu trú</li>
+        <li>Văn hóa ẩm thực địa phương</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Theo từng năm học</h2>
+      <div class="tiles">
+        <a class="tile" href="#nckh-2026-2027"><b>2026–2027</b><span>Năm nhất: làm quen với nghiên cứu khoa học.</span></a>
+        <a class="tile" href="#nckh-2027-2028"><b>2027–2028</b><span>Tham gia một đề tài của khoa.</span></a>
+        <a class="tile" href="#nckh-2028-2029"><b>2028–2029</b><span>Thực hiện một nghiên cứu nhỏ.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" data-page="nckh-2026-2027" hidden>
+    <p class="eyebrow">NCKH · Năm học</p>
+    <h1>2026–2027</h1>
+    <p class="lead">Năm nhất là năm làm quen: hiểu quy định, đọc tài liệu và chọn chủ đề mình muốn theo đuổi.</p>
+    <div class="block">
+      <div class="tablewrap"><table>
+        <thead><tr><th>Hoạt động</th><th>Vai trò</th><th>Trạng thái</th></tr></thead>
+        <tbody>
+          <tr><td>Tìm hiểu quy định NCKH sinh viên của trường</td><td>Tự tìm hiểu</td><td><span class="chip chip--now">Đang làm</span></td></tr>
+          <tr><td>Tham gia hội thảo hoặc câu lạc bộ NCKH của khoa</td><td>Thành viên</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+          <tr><td>Đọc và tóm tắt 3 bài báo về du lịch - khách sạn</td><td>Tự học</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+          <tr><td>Chọn một chủ đề muốn nghiên cứu</td><td>Tự học</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="page" data-page="nckh-2027-2028" hidden>
+    <p class="eyebrow">NCKH · Năm học</p>
+    <h1>2027–2028</h1>
+    <p class="lead">Năm hai, mình muốn bắt đầu làm nghiên cứu cùng nhóm và học cách viết báo cáo.</p>
+    <div class="block">
+      <div class="tablewrap"><table>
+        <thead><tr><th>Hoạt động</th><th>Vai trò</th><th>Trạng thái</th></tr></thead>
+        <tbody>
+          <tr><td>Tham gia một đề tài NCKH sinh viên của khoa</td><td>Thành viên</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+          <tr><td>Viết báo cáo ngắn về kết quả đã làm</td><td>Thành viên</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="page" data-page="nckh-2028-2029" hidden>
+    <p class="eyebrow">NCKH · Năm học</p>
+    <h1>2028–2029</h1>
+    <p class="lead">Năm ba, mình muốn tự thực hiện một nghiên cứu nhỏ về chủ đề đã chọn và trình bày kết quả.</p>
+    <div class="block">
+      <div class="tablewrap"><table>
+        <thead><tr><th>Hoạt động</th><th>Vai trò</th><th>Trạng thái</th></tr></thead>
+        <tbody>
+          <tr><td>Thực hiện một nghiên cứu nhỏ về chủ đề đã chọn</td><td>Thành viên chính</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+          <tr><td>Trình bày kết quả tại hội nghị sinh viên</td><td>Người trình bày</td><td><span class="chip chip--plan">Dự kiến</span></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <!-- CHỨNG CHỈ -->
+  <section class="page" data-page="cc" hidden>
+    <p class="eyebrow">Chứng chỉ</p>
+    <h1>Chứng chỉ Tin học - Ngoại ngữ</h1>
+    <p class="lead">Chứng chỉ là minh chứng cho kỹ năng của mình. Hiện mình đang tìm hiểu chuẩn đầu ra của trường để chọn kỳ thi phù hợp.</p>
+    <div class="block">
+      <h2>Tình trạng hiện tại</h2>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Nhóm</th><th>Chuẩn đầu ra</th><th>Tình trạng</th></tr></thead>
+        <tbody>
+          <tr><td><a href="#cc-tin-hoc">Tin học</a></td><td>Theo quy định của trường</td><td><span class="chip chip--look">Đang tìm hiểu</span></td></tr>
+          <tr><td><a href="#cc-ngoai-ngu">Ngoại ngữ</a></td><td>Theo quy định của trường</td><td><span class="chip chip--look">Đang tìm hiểu</span></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="block">
+      <h2>Các bước mình sẽ đi</h2>
+      <ol class="steps">
+        <li class="is-now">Tìm hiểu chuẩn đầu ra</li>
+        <li>Chọn kỳ thi</li>
+        <li>Ôn tập</li>
+        <li>Đăng ký và dự thi</li>
+        <li>Cập nhật minh chứng</li>
+      </ol>
+      <p class="note">Việc tiếp theo: hỏi phòng đào tạo hoặc cố vấn học tập về chuẩn đầu ra và lịch thi.</p>
+    </div>
+  </section>
+
+  <section class="page" data-page="cc-tin-hoc" hidden>
+    <p class="eyebrow">Chứng chỉ</p>
+    <h1>Tin học</h1>
+    <p class="lead">Kỹ năng tin học là nền cho các môn học sau này và cho công việc trong ngành khách sạn. Mình luyện song song với việc tìm hiểu chuẩn đầu ra.</p>
+    <div class="block">
+      <h2>Chứng chỉ mình đã có</h2>
+      <div class="empty">Mình chưa có chứng chỉ tin học. Khi có, thông tin sẽ được cập nhật tại đây.</div>
+    </div>
+    <div class="block">
+      <h2>Mình đang luyện</h2>
+      <ul class="plain">
+        <li><strong>Word, Excel, PowerPoint</strong><span>Xem các trang <a href="#nls-word">Word</a>, <a href="#nls-excel">Excel</a> và <a href="#nls-powerpoint">PowerPoint</a>.</span></li>
+        <li><strong>Sử dụng internet an toàn</strong><span>Tra cứu, kiểm chứng thông tin và bảo mật tài khoản.</span></li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Việc tiếp theo</h2>
+      <p>Hỏi phòng đào tạo hoặc cố vấn học tập về chuẩn đầu ra tin học của trường, hình thức thi và lịch thi gần nhất.</p>
+    </div>
+  </section>
+
+  <section class="page" data-page="cc-ngoai-ngu" hidden>
+    <p class="eyebrow">Chứng chỉ</p>
+    <h1>Ngoại ngữ</h1>
+    <p class="lead">Ngoại ngữ là kỹ năng quan trọng khi làm việc với khách quốc tế. Mình sẽ chọn ngoại ngữ và chứng chỉ theo quy định của trường.</p>
+    <div class="block">
+      <h2>Chứng chỉ mình đã có</h2>
+      <div class="empty">Mình chưa có chứng chỉ ngoại ngữ. Khi có, thông tin sẽ được cập nhật tại đây.</div>
+    </div>
+    <div class="block">
+      <h2>Cách mình luyện mỗi tuần</h2>
+      <ul class="plain">
+        <li><strong>Từ vựng ngành khách sạn</strong><span>Lễ tân, buồng phòng, nhà hàng, đặt phòng và thanh toán.</span></li>
+        <li><strong>Luyện nghe</strong><span>Nghe đều mỗi ngày, ghi lại từ mới.</span></li>
+        <li><strong>Luyện nói</strong><span>Thực hành tình huống đón khách với bạn cùng lớp.</span></li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Việc tiếp theo</h2>
+      <p>Hỏi phòng đào tạo hoặc cố vấn học tập về chuẩn đầu ra ngoại ngữ của trường, các chứng chỉ được công nhận và lịch thi gần nhất.</p>
+    </div>
+  </section>
+
+  <!-- KẾ HOẠCH -->
+  <section class="page" data-page="kh" hidden>
+    <p class="eyebrow">Kế hoạch</p>
+    <h1>Bốn năm đại học</h1>
+    <p class="lead">Lộ trình dự kiến cho giai đoạn 2026–2030. Mình sẽ điều chỉnh theo chương trình đào tạo của trường.</p>
+    <div class="block">
+      <div class="years">
+        <div class="year" data-i="0"><small>2026–2027 <span class="chip chip--now now-flag">Đang ở đây</span></small><h3>Xây nền tảng</h3><ul><li>Học tốt các học phần đại cương</li><li>Luyện Word, Excel, PowerPoint và AI</li><li>Bắt đầu ôn tin học và ngoại ngữ</li><li>Làm quen NCKH</li></ul></div>
+        <div class="year" data-i="1"><small>2027–2028 <span class="chip chip--now now-flag">Đang ở đây</span></small><h3>Kỹ năng nghề</h3><ul><li>Học nghiệp vụ khách sạn</li><li>Tham gia câu lạc bộ hoặc hoạt động của khoa</li><li>Hoàn thành chứng chỉ theo chuẩn đầu ra</li></ul></div>
+        <div class="year" data-i="2"><small>2028–2029 <span class="chip chip--now now-flag">Đang ở đây</span></small><h3>Trải nghiệm thực tế</h3><ul><li>Thực tập hoặc làm thêm tại cơ sở lưu trú</li><li>Tham gia đề tài NCKH</li></ul></div>
+        <div class="year" data-i="3"><small>2029–2030 <span class="chip chip--now now-flag">Đang ở đây</span></small><h3>Hoàn thiện và việc làm</h3><ul><li>Hoàn thành khóa luận hoặc học phần tốt nghiệp</li><li>Chuẩn bị CV và ứng tuyển</li></ul></div>
+      </div>
+    </div>
+    <div class="block">
+      <h2>Kế hoạch chi tiết</h2>
+      <div class="tiles">
+        <a class="tile" href="#kh-2026"><b>Năm 2026</b><span>Việc cần làm từ tháng 10 đến tháng 12.</span></a>
+        <a class="tile" href="#kh-2027"><b>Năm 2027</b><span>Mục tiêu theo từng quý.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" data-page="kh-2026" hidden>
+    <p class="eyebrow">Kế hoạch</p>
+    <h1>Năm 2026</h1>
+    <p class="lead">Ba tháng cuối năm là thời gian mình đặt nền: học đều, hiểu rõ chuẩn đầu ra và bắt đầu thói quen luyện kỹ năng mỗi tuần.</p>
+    <div class="block">
+      <div class="tablewrap"><table>
+        <thead><tr><th>Mục tiêu</th><th>Việc cụ thể</th><th>Hạn</th><th>Kết quả mong đợi</th></tr></thead>
+        <tbody>
+          <tr><td>Học tập</td><td>Đi học đầy đủ, ôn bài mỗi tuần, hỏi giảng viên khi chưa hiểu</td><td>Cuối học kỳ</td><td>Kết quả học kỳ tốt, không nợ học phần</td></tr>
+          <tr><td>Kỹ năng số</td><td>Thực hành Word, Excel, PowerPoint mỗi tuần và cập nhật trang web này</td><td>Tháng 12/2026</td><td>Có sản phẩm đầu tiên cho mỗi công cụ</td></tr>
+          <tr><td>Tin học và ngoại ngữ</td><td>Hỏi phòng đào tạo về chuẩn đầu ra và lịch thi</td><td>Tháng 11/2026</td><td>Biết cần chứng chỉ nào và thi khi nào</td></tr>
+          <tr><td>Ngoại ngữ</td><td>Học 20 phút mỗi ngày, ưu tiên từ vựng ngành khách sạn</td><td>Hằng ngày</td><td>Học đều, vốn từ tăng dần</td></tr>
+          <tr><td>NCKH</td><td>Tìm hiểu quy định NCKH sinh viên của trường</td><td>Tháng 12/2026</td><td>Nắm được cách đăng ký đề tài</td></tr>
+          <tr><td>Rèn luyện bản thân</td><td>Ghi nhật ký cảm xúc mỗi tuần, tập dừng lại hít thở trước khi phản hồi</td><td>Hằng tuần</td><td>Bình tĩnh hơn trong tình huống căng thẳng</td></tr>
+          <tr><td>Sức khỏe và sở thích</td><td>Chơi thể thao 3 buổi mỗi tuần, đọc sách mỗi tháng</td><td>Hằng tuần</td><td>Giữ sức khỏe và tinh thần thoải mái</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="page" data-page="kh-2027" hidden>
+    <p class="eyebrow">Kế hoạch</p>
+    <h1>Năm 2027</h1>
+    <p class="lead">Năm 2027 mình chuyển từ làm quen sang làm ra sản phẩm và lấy chứng chỉ.</p>
+    <div class="block">
+      <div class="tablewrap"><table style="min-width:44rem">
+        <thead><tr><th>Quý</th><th>Học tập</th><th>Kỹ năng số</th><th>Chứng chỉ</th><th>NCKH và hoạt động</th></tr></thead>
+        <tbody>
+          <tr><td>Quý 1</td><td>Học kỳ mới, ôn bài đều</td><td>Làm xong sản phẩm Word và Excel đầu tiên</td><td>Đăng ký thi tin học nếu đủ điều kiện</td><td>Đọc và tóm tắt 3 bài báo ngành</td></tr>
+          <tr><td>Quý 2</td><td>Giữ kết quả học tập ổn định</td><td>Làm sản phẩm PowerPoint và nhật ký dùng AI</td><td>Thi tin học theo lịch của trường</td><td>Tham gia hội thảo hoặc câu lạc bộ của khoa</td></tr>
+          <tr><td>Quý 3</td><td>Đặt mục tiêu cho học kỳ mới</td><td>Luyện tình huống nghiệp vụ khách sạn</td><td>Luyện thi ngoại ngữ</td><td>Chọn chủ đề nghiên cứu</td></tr>
+          <tr><td>Quý 4</td><td>Tổng kết năm học</td><td>Cập nhật website với sản phẩm mới</td><td>Thi ngoại ngữ theo lịch của trường</td><td>Viết đề cương nghiên cứu nhỏ</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">© 2026 Lương Nguyễn Bảo Trân · Sinh viên Trường Đại học Tây Đô · Cập nhật 12/10/2026</footer>
+
+<script>
+(function () {
+  var GROUPS = {
+    home: { pages: [['trang-chu', 'Trang chủ']] },
+    nls: { pages: [['nls', 'Tổng quan'], ['nls-word', 'Word'], ['nls-excel', 'Excel'], ['nls-powerpoint', 'PowerPoint'], ['nls-ai', 'AI']] },
+    nckh: { pages: [['nckh', 'Tổng quan'], ['nckh-2026-2027', '2026–2027'], ['nckh-2027-2028', '2027–2028'], ['nckh-2028-2029', '2028–2029']] },
+    cc: { pages: [['cc', 'Tổng quan'], ['cc-tin-hoc', 'Tin học'], ['cc-ngoai-ngu', 'Ngoại ngữ']] },
+    kh: { pages: [['kh', 'Tổng quan'], ['kh-2026', '2026'], ['kh-2027', '2027']] }
+  };
+  var pageToGroup = {};
+  Object.keys(GROUPS).forEach(function (g) {
+    GROUPS[g].pages.forEach(function (p) { pageToGroup[p[0]] = g; });
+  });
+  var pages = [].slice.call(document.querySelectorAll('.page'));
+  var navLinks = [].slice.call(document.querySelectorAll('.primary a'));
+  var sub = document.getElementById('subnav');
+  var first = true;
+
+  function route() {
+    var id = '';
+    try { id = decodeURIComponent((location.hash || '').replace(/^#/, '')); } catch (e) { id = ''; }
+    if (!pageToGroup[id]) id = 'trang-chu';
+    var g = pageToGroup[id];
+    pages.forEach(function (el) { el.hidden = el.getAttribute('data-page') !== id; });
+    navLinks.forEach(function (a) {
+      if (a.getAttribute('data-group') === g) a.setAttribute('aria-current', 'page');
+      else a.removeAttribute('aria-current');
+    });
+    var list = GROUPS[g].pages;
+    sub.textContent = '';
+    if (list.length > 1) {
+      list.forEach(function (p) {
+        var a = document.createElement('a');
+        a.href = '#' + p[0];
+        a.textContent = p[1];
+        if (p[0] === id) a.setAttribute('aria-current', 'page');
+        sub.appendChild(a);
+      });
+      sub.hidden = false;
+    } else {
+      sub.hidden = true;
+    }
+    if (!first) window.scrollTo(0, 0);
+    first = false;
+  }
+  window.addEventListener('hashchange', route);
+  route();
+
+  // mark the academic year we are in (a year starts in September 2026)
+  var now = new Date();
+  var idx = now.getFullYear() - 2026 - (now.getMonth() < 8 ? 1 : 0);
+  var cur = document.querySelector('.year[data-i="' + idx + '"]');
+  if (cur) cur.classList.add('is-now');
+
+  // copy buttons
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('.copy') : null;
+    if (!b) return;
+    var el = document.getElementById(b.getAttribute('data-target'));
+    if (!el) return;
+    var old = b.getAttribute('data-label') || b.textContent;
+    b.setAttribute('data-label', old);
+    function done(msg) { b.textContent = msg; setTimeout(function () { b.textContent = old; }, 1800); }
+    function fallback() {
+      var r = document.createRange();
+      r.selectNodeContents(el);
+      var s = window.getSelection();
+      s.removeAllRanges();
+      s.addRange(r);
+      done('Đã chọn, nhấn Ctrl+C');
+    }
+    try {
+      navigator.clipboard.writeText(el.textContent.trim()).then(function () { done('Đã sao chép'); }, fallback);
+    } catch (err) { fallback(); }
+  });
+
+  // hotel KPI calculator
+  var avail = document.getElementById('c-avail');
+  var sold = document.getElementById('c-sold');
+  var rev = document.getElementById('c-rev');
+  var outOcc = document.getElementById('o-occ');
+  var outAdr = document.getElementById('o-adr');
+  var outRev = document.getElementById('o-revpar');
+  var note = document.getElementById('c-note');
+  var nf = new Intl.NumberFormat('vi-VN', { maximumFractionDigits: 0 });
+  function money(n) { return nf.format(Math.round(n)) + ' đ'; }
+  function calc() {
+    var a = Number(avail.value), s = Number(sold.value), r = Number(rev.value);
+    note.textContent = '';
+    if (!(a > 0)) { outOcc.textContent = outAdr.textContent = outRev.textContent = '—'; note.textContent = 'Nhập số phòng có thể bán lớn hơn 0.'; return; }
+    if (s > a) { outOcc.textContent = outAdr.textContent = outRev.textContent = '—'; note.textContent = 'Số phòng đã bán không thể lớn hơn số phòng có thể bán.'; return; }
+    if (s < 0 || r < 0) { outOcc.textContent = outAdr.textContent = outRev.textContent = '—'; note.textContent = 'Các giá trị không được âm.'; return; }
+    outOcc.textContent = (Math.round(s / a * 1000) / 10).toLocaleString('vi-VN') + '%';
+    outAdr.textContent = s > 0 ? money(r / s) : '—';
+    outRev.textContent = money(r / a);
+  }
+  [avail, sold, rev].forEach(function (el) { el.addEventListener('input', calc); });
+  calc();
+})();
+</script>
+
+</body></html>
